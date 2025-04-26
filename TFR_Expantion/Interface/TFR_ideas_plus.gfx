@@ -1,0 +1,96 @@
+
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_islamic_sectarian_conflicts"
+		textureFile = "gfx/interface/ideas/religion/islamic_sectarian_conflicts.dds"
+	}
+
+
+}

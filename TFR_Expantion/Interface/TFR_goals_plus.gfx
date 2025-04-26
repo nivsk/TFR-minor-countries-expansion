@@ -1,0 +1,384 @@
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_focus_political_start"
+		texturefile = "gfx/interface/goals/GFX_focus_political_start.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_the_final_aeon"
+		texturefile = "gfx/interface/goals/GFX_the_final_aeon.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_reverse_their_progress"
+		texturefile = "gfx/interface/goals/GFX_reverse_their_progress.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_infiltrate_their_armies"
+		texturefile = "gfx/interface/goals/GFX_infiltrate_their_armies.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_open_their_eyes"
+		texturefile = "gfx/interface/goals/GFX_open_their_eyes.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_organize_the_kollective"
+		texturefile = "gfx/interface/goals/GFX_organize_the_kollective.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_passion_of_the_aryan"
+		texturefile = "gfx/interface/goals/GFX_passion_of_the_aryan.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_unify_nationalist_militaries"
+		texturefile = "gfx/interface/goals/GFX_unify_nationalist_militaries.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_adopt_a_neoclassical_aesthetic"
+		texturefile = "gfx/interface/goals/GFX_adopt_a_neoclassical_aesthetic.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_prepare_the_nation"
+		texturefile = "gfx/interface/goals/GFX_prepare_the_nation.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_the_totalitarian_society"
+		texturefile = "gfx/interface/goals/GFX_the_totalitarian_society.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_strength_and_glory"
+		texturefile = "gfx/interface/goals/GFX_strength_and_glory.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_refine_airland_combat"
+		texturefile = "gfx/interface/goals/GFX_refine_airland_combat.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_prepare_the_nation"
+		texturefile = "gfx/interface/goals/GFX_prepare_the_nation.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_Entrech_French_Supriority"
+		texturefile = "gfx/interface/goals/GFX_Entrech_French_Supriority.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_baskinthelight"
+		texturefile = "gfx/interface/goals/GFX_baskinthelight.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_Utilize_Fascist_Militias"
+		texturefile = "gfx/interface/goals/GFX_Utilize_Fascist_Militias.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_Suburban_Renewal"
+		texturefile = "gfx/interface/goals/GFX_Suburban_Renewal.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_Welcome_International_Volunteers"
+		texturefile = "gfx/interface/goals/GFX_Welcome_International_Volunteers.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_Rebalance"
+		texturefile = "gfx/interface/goals/GFX_Rebalance.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_Stabilite_et_Autorite"
+		texturefile = "gfx/interface/goals/GFX_Stabilite_et_Autorite.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_generic_army_effort"
+		texturefile = "gfx/interface/goals/GFX_generic_army_effort.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_generic_media_control"
+		texturefile = "gfx/interface/goals/GFX_generic_media_control.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_generic_bury_weapons"
+		texturefile = "gfx/interface/goals/GFX_generic_bury_weapons.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_generic_western_democracy"
+		texturefile = "gfx/interface/goals/GFX_generic_western_democracy.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_Strong_Families"
+		texturefile = "gfx/interface/goals/GFX_Strong_Families.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_generic_promote_managerial_thought"
+		texturefile = "gfx/interface/goals/GFX_generic_promote_managerial_thought.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_generic_increase_corporate_taxes"
+		texturefile = "gfx/interface/goals/GFX_generic_increase_corporate_taxes.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_shareholder_democracy"
+		texturefile = "gfx/interface/goals/GFX_shareholder_democracy.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_codify_social_stratification"
+		texturefile = "gfx/interface/goals/GFX_codify_social_stratification.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_tighten_our_grip_on_the_plutocrats"
+		texturefile = "gfx/interface/goals/GFX_tighten_our_grip_on_the_plutocrats.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_encourage_entrepenureship"
+		texturefile = "gfx/interface/goals/GFX_encourage_entrepenureship.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_prohibit_subversive_media"
+		texturefile = "gfx/interface/goals/GFX_prohibit_subversive_media.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_generic_ease_taxpayer_burdens"
+		texturefile = "gfx/interface/goals/GFX_generic_ease_taxpayer_burdens.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_generic_foriegn_investment"
+		texturefile = "gfx/interface/goals/GFX_generic_foriegn_investment.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_500_days_program"
+		texturefile = "gfx/interface/goals/GFX_500_days_program.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_shareholder_democracy_2"
+		texturefile = "gfx/interface/goals/GFX_shareholder_democracy_2.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_corporate_concessions"
+		texturefile = "gfx/interface/goals/GFX_corporate_concessions.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_force_corporate_compliance"
+		texturefile = "gfx/interface/goals/GFX_force_corporate_compliance.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_other_alternatives"
+		texturefile = "gfx/interface/goals/GFX_other_alternatives.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_generic_bust_the_trusts"
+		texturefile = "gfx/interface/goals/GFX_generic_bust_the_trusts.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "USB_criminal_justice_reform"
+		texturefile = "gfx/interface/goals/USB_criminal_justice_reform.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "generic_bank"
+		texturefile = "gfx/interface/goals/generic_bank.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "USC_encourage_the_working_men"
+		texturefile = "gfx/interface/goals/USC_encourage_the_working_men.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "SOV_healthy_consumerism"
+		texturefile = "gfx/interface/goals/SOV_healthy_consumerism.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "USB_national_synchronization_project"
+		texturefile = "gfx/interface/goals/USB_national_synchronization_project.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GER_socialist_democracy"
+		texturefile = "gfx/interface/goals/GER_socialist_democracy.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "SOV_encourage_local_democracy"
+		texturefile = "gfx/interface/goals/SOV_encourage_local_democracy.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "SOV_peoples_democracy"
+		texturefile = "gfx/interface/goals/SOV_peoples_democracy.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "APA_workplace_democracy"
+		texturefile = "gfx/interface/goals/APA_workplace_democracy.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "APA_revolutionary_justice"
+		texturefile = "gfx/interface/goals/APA_revolutionary_justice.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "APA_bill_of_rights_socialism"
+		texturefile = "gfx/interface/goals/APA_bill_of_rights_socialism.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GER_community_of_socialist_workers"
+		texturefile = "gfx/interface/goals/GER_community_of_socialist_workers.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "APA_meritocratic_socialism"
+		texturefile = "gfx/interface/goals/APA_meritocratic_socialism.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "FPR_workplace_democracy"
+		texturefile = "gfx/interface/goals/FPR_workplace_democracy.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "SOV_secured_socialist_state"
+		texturefile = "gfx/interface/goals/SOV_secured_socialist_state.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "NSM_implement_guild_socialism"
+		texturefile = "gfx/interface/goals/NSM_implement_guild_socialism.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "USC_eye_of_providence"
+		texturefile = "gfx/interface/goals/USC_eye_of_providence.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "SOV_workplace_democracy"
+		texturefile = "gfx/interface/goals/SOV_workplace_democracy.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GER_socialist_market_economics"
+		texturefile = "gfx/interface/goals/GER_socialist_market_economics.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "FAF_Social_Harmony"
+		texturefile = "gfx/interface/goals/FAF_Social_Harmony.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "APA_socialist_realism"
+		texturefile = "gfx/interface/goals/APA_socialist_realism.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "APA_war_communism"
+		texturefile = "gfx/interface/goals/APA_war_communism.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GER_defenders_of_democracy"
+		texturefile = "gfx/interface/goals/GER_defenders_of_democracy.dds"
+	}
+}
