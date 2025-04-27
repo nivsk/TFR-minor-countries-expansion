@@ -1936,6 +1936,178 @@ focus_tree = {
 				ruling_party = totalitarian_socialist
 				elections_allowed = no
 			}
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_planned_economy
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+
+			country_event = generic_event.10
 		}
 	}
    
@@ -2087,6 +2259,177 @@ focus_tree = {
 				ruling_party = communist
 				elections_allowed = no
 			}
+		   #Changing to social economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_socialist_market
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+
+			country_event = generic_event.9
 		}
 	}
 
@@ -2237,6 +2580,180 @@ focus_tree = {
 				ruling_party = libertarian_socialist
 				elections_allowed = yes
 			}
+
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_worker_controlled_economy
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+ 
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+
+
+			country_event = generic_event.8
 		}
 	}
 
@@ -2269,6 +2786,7 @@ focus_tree = {
 				idea = Democrats_Rally
 				days = 50
 			}
+
 		}
 	}
 
@@ -2423,6 +2941,178 @@ focus_tree = {
 				ruling_party = social_democrat
 				elections_allowed = yes
 			}
+
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_welfare_capitalism
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+
+			country_event = generic_event.6
 		}
 	}
 
@@ -2577,6 +3267,178 @@ focus_tree = {
 				ruling_party = social_liberal
 				elections_allowed = yes
 			}
+
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_liberal_corporatism
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+
+			country_event = generic_event.1
 		}			
 	}
 
@@ -2856,7 +3718,178 @@ focus_tree = {
 				ruling_party = market_liberal
 				elections_allowed = yes
 			}
-			
+
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_ancap
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+
+			country_event = generic_event.8
 		}
 	}
 
@@ -3023,6 +4056,178 @@ focus_tree = {
 				ruling_party = conservative
 				elections_allowed = yes
 			}
+
+		   #Changing to economic system
+			if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+
+			country_event = generic_event.1
 		}
 
 	}
@@ -3271,6 +4476,178 @@ focus_tree = {
 				ideology = authoritarian_democrat
 				popularity = 0.15
 			}
+
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_state_capitalism
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+
+			country_event = generic_event.5
 		}
 	}
 
@@ -3425,6 +4802,184 @@ focus_tree = {
 			}
 			add_ideas = Despotic_Elite_Council
 
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_military_controlled_economy
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+
+			country_event = generic_event.4
 		}
 	}
 
@@ -3470,7 +5025,7 @@ focus_tree = {
 		}		
 	}
 
-   # fascist
+   #fascist
 	focus = {
 		id = political_fascism
 		icon = GFX_adopt_a_neoclassical_aesthetic
@@ -3698,6 +5253,178 @@ focus_tree = {
 					add_idea = highest_police
 				}
 			}
+
+		   #Changing to fascist economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_command_economy
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+
+			country_event = generic_event.3
 		}
 	}
 
@@ -3898,10 +5625,189 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-		set_politics = {
-			ruling_party = national_socialist
-			elections_allowed = no
-		}
+			set_politics = {
+				ruling_party = national_socialist
+				elections_allowed = no
+			}
+
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_managed_economy
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+
+			country_event = generic_event.2
 		}
 	}
 

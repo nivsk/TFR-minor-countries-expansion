@@ -1,0 +1,80 @@
+﻿l_english:
+
+generic_event.1.t: "Reshaping the State"
+generic_event.1.d: "After a long period of internal debates, political struggle, and growing public demand for reform, the time has come to decide the future structure of our nation.\n\nOur current governmental framework — whether authoritarian, monarchical, or otherwise rigid — is no longer sustainable. The people demand change, and history demands action.\n\nThe choice we make today will define the spirit of our governance for generations to come. Shall we establish a Parliamentary Republic, ensuring legislative supremacy? Perhaps a Semi-Presidential system, balancing executive and legislative power? Or place strong leadership at the heart of the state with a Presidential Republic?\n\nAlternatively, radical voices call for a return to monarchy — either a Semi-Constitutional Monarchy preserving royal prerogatives, or a fully Constitutional Monarchy where tradition meets modern democracy."
+
+generic_event.1.1.a: "Establish a Parliamentary Republic"
+generic_event.1.1.b: "Adopt a Semi-Presidential System"
+generic_event.1.1.c: "Create a Presidential Republic"
+generic_event.1.1.d: "Return to royal authority under modern constraints."
+generic_event.1.1.e: "Restore a strong, active monarchy to preserve order."
+
+generic_event.2.t: "Ideological Shift"
+generic_event.2.d: "After a prolonged period of societal unrest, political conflict, and the escalating pressure of popular demands, the time has come for a decisive shift in our nation's future.\n\nOur current state — be it authoritarian, bureaucratic, or otherwise — is failing to meet the needs of the people, and we stand at the crossroads of history.\n\nThe choice we make today will shape the destiny of our country for generations. Will we embrace a Nazi dictatorship, offering ruthless control and oppression? Perhaps an ultranationalist dictatorship, driven by expansionist ambitions and radical ideals? Or do we opt for a military dictatorship, where the strength of arms dictates the future?\n\nAlternatively, voices from the past call for a theocratic state, where religious power would guide all aspects of governance and society, turning faith into law and authority."
+
+generic_event.2.1.a: "Embrace the Nazi Dictatorship"
+generic_event.2.1.b: "Follow the Ultranationalist Path"
+generic_event.2.1.c: "Establish a Military Dictatorship"
+generic_event.2.1.d: "Form a Theocratic State"
+
+generic_event.3.t: "Ideological Shift"
+generic_event.3.d: "After a prolonged period of societal unrest, political conflict, and the escalating pressure of popular demands, the time has come for a decisive shift in our nation's future.\n\nOur current state — be it authoritarian, bureaucratic, or otherwise — is failing to meet the needs of the people, and we stand at the crossroads of history.\n\nThe choice we make today will shape the destiny of our country for generations. Will we embrace the harsh grip of fascist dictatorship, founded on a single leader with absolute power and the suppression of opposition? Perhaps we will follow a path of radical ultranationalism, prioritizing expansion and ethnic purity as the core of our nation's identity? Alternatively, a military dictatorship might take hold, placing our future in the hands of the armed forces, emphasizing strength and discipline?\n\nLastly, some advocate for a theocratic state, where religious authority governs all aspects of life, blending faith and law into an unbreakable bond that guides the nation's every action."
+
+generic_event.3.1.a: "Embrace the Fascist Dictatorship"
+generic_event.3.1.b: "Follow the Ultranationalist Path"
+generic_event.3.1.c: "Establish a Military Dictatorship"
+generic_event.3.1.d: "Form a Theocratic State"
+
+generic_event.4.t: "The Path of Despotism"
+generic_event.4.d: "In the face of growing instability and rising demands for power concentrated in the hands of a single ruler, we now stand at the crossroads of absolute authority.\n\nOur current state is fractured, and the people cry out for strong leadership to restore order. This is our moment of reckoning. The choice we make today will shape our nation for generations to come.\n\nShall we restore a glorious Absolute Monarchy, with a ruler above all? Or perhaps a Military Dictatorship, where the strength of the army governs our future? Alternatively, a Presidential Dictatorship, where the supreme leader holds absolute sway over both executive and legislative matters? For those seeking a return to faith as supreme authority, we could establish a Theocracy, with religious law as the foundation of governance. Finally, the radical forces call for an Ultrantionalist Dictatorship, driven by expansionist ideologies and an iron grip on the nation's future."
+  
+generic_event.4.1.a: "Restore the Absolute Monarchy"
+generic_event.4.1.b: "Establish a Military Dictatorship"
+generic_event.4.1.c: "Embrace Presidential Dictatorship"
+generic_event.4.1.d: "Create a Theocratic State"
+generic_event.4.1.e: "Follow the Ultranaionalist Path"
+
+generic_event.5.t: "The Path of Authoritarian Democracy"
+generic_event.5.d: "In the wake of increasing unrest and the desire for a more forceful leadership, we face a pivotal moment in our nation's future.\n\nOur current political system, whether weak, unstable, or too fragmented, has proven itself unable to adequately address the growing demands of the people. As frustration mounts and discontent spreads, the time has come to consider a more decisive form of governance.\n\nThe question we now face is simple but monumental: How will we reshape our leadership? Should we turn to an Absolute Monarchy, where all power is concentrated in the hands of a single ruler, a sovereign whose word is law and whose authority is unquestioned? Or should we look toward a Military Dictatorship, where the nation's future is decided by the strength and discipline of the armed forces, prioritizing stability and order above all else? Another option, which promises centralized control without the military aspect, is to establish a Presidential Dictatorship, where a singular, powerful leader emerges to direct the nation with absolute authority, bypassing the slow and ineffective democratic processes. Each path offers its own vision of power, but the consequences of the choice we make today will define our future."
+
+generic_event.5.1.a: "Restore the Absolute Monarchy"
+generic_event.5.1.b: "Establish a Military Dictatorship"
+generic_event.5.1.c: "Embrace Presidential Dictatorship"
+
+generic_event.6.t: "The Future of Our Republic"
+generic_event.6.d: "The people have spoken, and the call for a new social order is undeniable. After years of political turmoil, economic struggle, and social unrest, the time has come to determine the form our democracy will take.\n\nShall we adopt a Social Republic, prioritizing egalitarianism and the collective welfare of the people? Perhaps a Semi-Presidential system, which balances the power of the president with a strong parliamentary structure? Or will we place more executive power in the hands of a directly-elected president, forming a Presidential Republic?\n\nAlternatively, the more traditional voices suggest the stability of a Parliamentary Republic, where the will of the people is more directly reflected in a cooperative legislature."
+
+generic_event.6.1.a: "Adopt the Social Republic"
+generic_event.6.1.b: "Establish a Semi-Presidential System"
+generic_event.6.1.c: "Create a Presidential Republic"
+generic_event.6.1.d: "Form a Parliamentary Republic"
+
+generic_event.7.t: "The Revolution of the People"
+generic_event.7.d: "The time has come to break the chains of oppression and forge a society where liberty, equality, and solidarity reign supreme. After years of exploitation and capitalist corruption, the people demand a radical transformation.\n\nShall we establish a Socialist Republic, based on the principles of communal ownership and democratic governance of the economy? Perhaps we take a more radical step, embracing a Revolutionary Out Line, where AI-driven governance guides us towards a classless society, unburdened by the state. Or should we rally behind the Revolutionary Front, a united movement of the oppressed, working together to overthrow the old order and create a new world through direct action and revolutionary means?"
+
+generic_event.7.1.a: "Establish the Socialist Republic"
+generic_event.7.1.b: "Embrace the Revolutionary Out Line"
+generic_event.7.1.c: "Join the Revolutionary Front"
+
+generic_event.8.t: "The Dawn of Unrestricted Liberty"
+generic_event.8.d: "In a world dominated by the state and corporate monopolies, the time has come to push for true freedom and individual sovereignty. The people demand a system where the market reigns supreme, unshackled by governmental control.\n\nShall we embrace AI-driven governance, where algorithms make decisions to ensure the free flow of capital and the protection of individual rights? Or do we opt for a Semi-Presidential Republic, blending executive power with market-driven policies? Perhaps a strong Presidential Republic, where a singular leader can act decisively to remove barriers to economic freedom? Alternatively, a Parliamentary Republic may be the path forward, with legislative powers focused on deregulation and ensuring that the market, not the state, dictates the future."
+
+generic_event.8.1.a: "Embrace AI Governance"
+generic_event.8.1.b: "Establish a Semi-Presidential Republic"
+generic_event.8.1.c: "Opt for a Presidential Republic"
+generic_event.8.1.d: "Create a Parliamentary Republic"
+
+generic_event.9.t: "The Path to a New Society"
+generic_event.9.d: "In the face of economic inequality, social injustice, and rampant exploitation, the working class rises to demand a new world order. The time has come to embrace the ideals of communism and overthrow the old structures of power. But what shape should this new society take?\n\nShall we establish a Socialist Republic, where the workers hold power and resources are shared equally? Or will we pursue State Communism, where a centralized government oversees the economy to ensure the collective good? Alternatively, we could unite under a Revolutionary Front, a coalition of workers and activists dedicated to dismantling the old order. Finally, we could establish a Neo-Soviet Republic, resurrecting the spirit of the Soviet Union with a modern twist, combining centralized authority and collective power to lead the charge towards a new world."
+
+generic_event.9.1.a: "Establish a Socialist Republic"
+generic_event.9.1.b: "Embrace State Communism"
+generic_event.9.1.c: "Form a Revolutionary Front"
+generic_event.9.1.d: "Establish a Neo-Soviet Republic"
+
+generic_event.10.t: "The Revolution's Choice"
+generic_event.10.d: "The struggle for total control over the economy and society has brought us to a critical moment. The people's call for equality and justice has become a demand for absolute power in the hands of the state. It is time to choose the path that will lead us into the future of totalitarian socialism. What direction should our revolution take?\n\nDo we adopt State Communism, with a strong centralized authority to enforce equality through total control of the means of production? Or do we embrace the power of a Revolutionary Front, a coalition united by the goal of restructuring society with radical efficiency? Alternatively, we could resurrect the might of the Neo-Soviet Republic, with centralized power and state-led industry, drawing inspiration from the past to build a new world order."
+
+generic_event.10.1.a: "Adopt State Communism"
+generic_event.10.1.b: "Form a Revolutionary Front"
+generic_event.10.1.c: "Establish a Neo-Soviet Republic"
