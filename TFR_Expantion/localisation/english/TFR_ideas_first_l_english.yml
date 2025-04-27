@@ -12,6 +12,12 @@
  Autocrats_Rally: "Autocrats' Rally"
  Autocrats_Rally_desc: "A rising tide of authoritarian rhetoric brings together reactionary elements under one banner."
 
+ Democrats_Rally: "Democrats Rally"
+ Democrats_Rally_desc: "In times of uncertainty, moderate forces rally together, seeking to restore balance through democratic reform. Though unity grows among centrists, the resulting tensions strain national stability."
+
+ Socialists_Rally: "Socialists Rally"
+ Socialists_Rally_desc: "The fires of socialism are reigniting. Libertarian and authoritarian leftist movements surge forward, united by a common cause—but internal divisions and unrest simmer beneath the surface."
+
  Mobilized_masses: "The Engine of the Movement"
  Mobilized_masses_desc: "The party has achieved something its rivals only dream of—mass mobilization. Through propaganda, fear, loyalty, and spectacle, millions take to the streets, chanting in unison, obeying without hesitation. Youth leagues, paramilitaries, unions, and media all speak with one voice. The country is no longer watching the movement—it is living it."
 
@@ -123,3 +129,48 @@
 
  Democratic_Socialist_Commonwealth: "Democratic Socialist Commonwealth"
  Democratic_Socialist_Commonwealth_desc: "At last, we have created a society where democracy governs not just the halls of power, but the factories, the fields, and the markets. Our commonwealth stands as a beacon of solidarity, liberty, and social prosperity."
+
+ Freedom_Through_Solidarity: "Freedom Through Solidarity"
+ Freedom_Through_Solidarity_desc: "True freedom is born from cooperation, not domination. By dismantling hierarchy and building networks of solidarity, we empower communities to govern themselves. Our revolution begins with mutual aid, grassroots democracy, and a commitment to collective liberation."
+
+ Grassroots_Revolution: "Grassroots Revolution"
+ Grassroots_Revolution_desc: "Power grows from the ground up. By organizing workers, neighborhoods, and communities into a living network of resistance, we ignite a revolution that no authority can suppress."
+
+ Syndicalist_Networks: "Syndicalist Networks"
+ Syndicalist_Networks_desc: "Syndicates—free associations of workers—will replace capitalist and bureaucratic control. Industries will be managed collectively, with coordination based on need, solidarity, and shared purpose."
+
+ Abolish_the_State: "Abolish the State"
+ Abolish_the_State_desc: "The state, as a tool of oppression, has no place in a free society. We will dismantle centralized power structures, replacing them with federations of autonomous communities bound by mutual respect and solidarity."
+
+ Libertarian_Socialist_Federation: "Libertarian Socialist Federation"
+ Libertarian_Socialist_Federation_desc: "The old order has fallen. In its place stands a federation of free communes, worker councils, and cooperative societies. No rulers, no masters—only self-governance through unity and shared freedom."
+
+ Power_to_the_Proletariat: "Power to the Proletariat"
+ Power_to_the_Proletariat_desc: "The chains of capitalism will be shattered by the iron will of the working class. Through revolutionary struggle and centralized leadership, we seize the means of production and build a new world where labor, not greed, commands society."
+
+ Revolutionary_Vanguard: "Revolutionary Vanguard"
+ Revolutionary_Vanguard_desc: "A disciplined revolutionary vanguard is essential to guide the masses, suppress counter-revolution, and ensure the triumph of socialist ideals. Without leadership, revolution falls to chaos."
+
+ Total_Control_of_Production: "Total Control of Production"
+ Total_Control_of_Production_desc: "The economy must serve the people, not private interests. Total state control of industry and labor will guarantee equality, efficiency, and the victory of socialism."
+
+ Iron_Curtain_of_Surveillance: "Iron Curtain of Surveillance"
+ Iron_Curtain_of_Surveillance_desc: "Enemies of progress lurk in every shadow. Vigilance through surveillance and control ensures that no saboteur, no dissident, and no traitor can undermine the revolution from within."
+
+ Red_Totalitarianism: "Red Totalitarianism"
+ Red_Totalitarianism_desc: "The revolution has transcended. The state, the party, and the people move as one unified force, forging an unstoppable socialist order. Discipline, loyalty, and unity are eternal."
+
+ The_State_Is_All: "The State Is All"
+ The_State_Is_All_desc: "Individuality is obsolete; freedom is a facade. The state embodies the collective will, absorbing every thought, every act, every soul. Surveillance is security, obedience is strength, and loyalty is virtue. The state provides all."
+
+ Ideological_Purification: "Ideological Purification"
+ Ideological_Purification_desc: "Only total loyalty can guarantee survival. Reformists, anarchists, and reactionaries will be rooted out without mercy. Purity of ideology is the foundation of unity—and unity is life."
+
+ Total_Command_Economy: "Total Command Economy"
+ Total_Command_Economy_desc: "Markets breed chaos and greed. By seizing all production and planning every detail of economic life, we will eliminate waste, competition, and uncertainty. Efficiency will be dictated from above."
+
+ The_Surveillance_Apparatus: "The Surveillance Apparatus"
+ The_Surveillance_Apparatus_desc: "Rebellion is born in secrecy. We will extinguish it before it stirs. Through total surveillance, informant networks, and state security forces, every whisper of dissent will be heard—and crushed."
+
+ The_Total_State: "The Total State"
+ The_Total_State_desc: "The people and the state are no longer separate. There is no more deviation, no more doubt. We are one: an immortal ideological engine, perfect in loyalty, discipline, and purpose."

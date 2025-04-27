@@ -1781,8 +1781,14 @@ focus_tree = {
 				date < 1939.1.1				
 			}
 		}
+		completion_reward = {
+			add_timed_idea = { 
+				idea = Socialists_Rally
+				days = 50
+			}
+		}
 	}
-   #Total_socialist
+   #totalitarian_socialist
 	focus = {
 		id = political_total_socialism
 		icon = USC_eye_of_providence
@@ -1803,6 +1809,13 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = The_State_Is_All
+			add_popularity = {
+    			ideology = totalitarian_socialist
+    			popularity = 0.1
 			}
 		}
 	}
@@ -1827,6 +1840,13 @@ focus_tree = {
 				date < 1939.1.1				
 			}
 		}
+		completion_reward = {
+			add_ideas = Ideological_Purification
+			add_popularity = {
+    			ideology = totalitarian_socialist
+    			popularity = 0.15
+			}
+		}
 	}
 	
 	focus = {
@@ -1847,6 +1867,13 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Total_Command_Economy
+			add_popularity = {
+    			ideology = totalitarian_socialist
+    			popularity = 0.01
 			}
 		}
 	}
@@ -1871,6 +1898,13 @@ focus_tree = {
 				date < 1939.1.1				
 			}
 		}
+		completion_reward = {
+			add_ideas = The_Surveillance_Apparatus
+			add_popularity = {
+    			ideology = totalitarian_socialist
+    			popularity = 0.1
+			}
+		}
 	}
 	
 	focus = {
@@ -1880,6 +1914,9 @@ focus_tree = {
 		y = 6
 		cost = 10
 
+		available = {
+			totalitarian_socialist > 0.5
+		}
 		prerequisite = { focus = political_total_socialism_third }
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1891,6 +1928,13 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = The_Total_State
+			set_politics = {
+				ruling_party = totalitarian_socialist
+				elections_allowed = no
 			}
 		}
 	}
@@ -1918,6 +1962,13 @@ focus_tree = {
 				date < 1939.1.1				
 			}
 		}
+		completion_reward = {
+			add_ideas = Power_to_the_Proletariat
+			add_popularity = {
+    			ideology = communist
+    			popularity = 0.1
+			}
+		}
 	}
 		focus = {
 		id = political_authoritarian_socialism_first
@@ -1937,6 +1988,13 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Revolutionary_Vanguard
+			add_popularity = {
+    			ideology = communist
+    			popularity = 0.05
 			}
 		}
 	}
@@ -1961,6 +2019,13 @@ focus_tree = {
 				date < 1939.1.1				
 			}
 		}
+		completion_reward = {
+			add_ideas = Total_Control_of_Production
+			add_popularity = {
+    			ideology = communist
+    			popularity = 0.1
+			}
+		}
 	}
 	
 	focus = {
@@ -1983,6 +2048,13 @@ focus_tree = {
 				date < 1939.1.1				
 			}
 		}
+		completion_reward = {
+			add_ideas = Iron_Curtain_of_Surveillance
+			add_popularity = {
+    			ideology = communist
+    			popularity = 0.1
+			}
+		}
 	}
 	
 	focus = {
@@ -1991,6 +2063,10 @@ focus_tree = {
 		x = 21
 		y = 6
 		cost = 10
+
+		available = {
+			communist > 0.5
+		}
 
 		prerequisite = { focus = political_authoritarian_socialism_third}
 
@@ -2003,6 +2079,13 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Red_Totalitarianism
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = no
 			}
 		}
 	}
@@ -2028,6 +2111,14 @@ focus_tree = {
 				date < 1939.1.1				
 			}
 		}
+		completion_reward = {
+			add_ideas = Freedom_Through_Solidarity
+			add_political_power = 100
+			add_popularity = {
+    			ideology = libertarian_socialist
+    			popularity = 0.1
+			}
+		}
 	}
 	focus = {
 		id = political_libertarian_socialism_first
@@ -2047,6 +2138,13 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Grassroots_Revolution
+			add_popularity = {
+    			ideology = libertarian_socialist
+    			popularity = 0.05
 			}
 		}
 	}
@@ -2071,6 +2169,13 @@ focus_tree = {
 				date < 1939.1.1				
 			}
 		}
+		completion_reward = {
+			add_ideas = Syndicalist_Networks
+			add_popularity = {
+    			ideology = social_liberal
+    			popularity = 0.1
+			}
+		}
 	}
 	
 	focus = {
@@ -2093,6 +2198,13 @@ focus_tree = {
 				date < 1939.1.1				
 			}
 		}
+		completion_reward = {
+			add_ideas = Abolish_the_State
+			add_popularity = {
+    			ideology = libertarian_socialist
+    			popularity = 0.1
+			}
+		}
 	}
 	
 	focus = {
@@ -2101,6 +2213,10 @@ focus_tree = {
 		x = 25
 		y = 6
 		cost = 10
+
+		available = {
+			libertarian_socialist > 0.5
+		}
 
 		prerequisite = { focus = political_libertarian_socialism_third }
 
@@ -2113,6 +2229,13 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Libertarian_Socialist_Federation
+			set_politics = {
+				ruling_party = libertarian_socialist
+				elections_allowed = yes
 			}
 		}
 	}
@@ -2139,6 +2262,12 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_timed_idea = { 
+				idea = Democrats_Rally
+				days = 50
 			}
 		}
 	}

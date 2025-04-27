@@ -11,7 +11,7 @@ ideas = {
 			}
     		
 		}
-
+       #Rallies
 		Ultra_Right_Rally = {
 			picture = GER_partisan_romanticism_idea
 
@@ -36,6 +36,35 @@ ideas = {
 			}
     		
 		}
+		Democrats_Rally = {
+			picture = GER_partisan_romanticism_idea
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.1
+				conservative_drift = 0.1
+				market_liberal_drift = 0.1
+				social_democrat_drift = 0.1
+				social_liberal_drift = 0.1
+			}
+    		
+		}
+		Socialists_Rally = {
+			picture = GER_partisan_romanticism_idea
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+				libertarian_socialist_drift = 0.1
+				authoritarian_democrat_drift = 0.1
+				totalitarian_socialist_drift = 0.1
+
+			}
+    		
+		}
+
 	   #Nazi ideas
 		Racial_purity = {
 			picture = PTF_high_popular_support
@@ -77,7 +106,8 @@ ideas = {
 			}
     		
 		}
-	   # Fascists Ideas
+
+	   #Fascists Ideas
 		Fascist_Mobilization = {
 			picture = GER_national_hygiene_idea
 			removal_cost = -1
@@ -137,7 +167,7 @@ ideas = {
 			}
 		}
 
-
+	   #Despots
 		Despotic_Shadow_Cabinet = {
 			picture = generic_systemic_corruption
 			removal_cost = -1
@@ -196,6 +226,8 @@ ideas = {
 				nationalist_drift = 0.10
 			}
 		}
+
+	   #Authoritarian_democrat
 		Authoritarian_Democracy_Thought = {
 			picture = USB_fighting_for_democracy
 			removal_cost = -1
@@ -303,6 +335,7 @@ ideas = {
 				ideology_drift_defense = 0.15
 			}
 		}
+	   
 	   #MarketLiberals:
 		Anarcho_Capitalist_Awakening = {
 			picture = ENG_reform_economics_idea
@@ -367,9 +400,10 @@ ideas = {
 
 			}
 		}
+	   
 	   #Social Liberals
 		Social_Liberal_Reform_Movement = {
-			picture = GFX_focus_on_social_reform
+			picture = SOV_reforming_the_system
 			removal_cost = -1
 			modifier = {
 				conservative_drift = -0.01
@@ -385,7 +419,7 @@ ideas = {
 
 
 		Balanced_Capitalism = {
-			picture = GFX_generic_investment
+			picture = USB_technocratic_reforms
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_factory = 0.05
@@ -399,7 +433,7 @@ ideas = {
 		}
 
 		Regulated_Market_Initiative = {
-			picture = GFX_generic_research_production
+			picture = SOV_regulated_marktes
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_dockyard = 0.05
@@ -415,7 +449,7 @@ ideas = {
 
 
 		Global_Engagement_Pact = {
-			picture = GFX_generic_intelligence_agency
+			picture = TFR_global_asssociation_button
 			removal_cost = -1
 			modifier = {
 				justify_war_goal_time = -0.15
@@ -430,7 +464,7 @@ ideas = {
 
 
 		Modern_Liberal_Consensus = {
-			picture = GFX_internationalism_focus
+			picture = FRA_European_Liberal_Values
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.1
@@ -443,11 +477,10 @@ ideas = {
 				decision_cost_factor = -0.1
 			}
 		}
-
-		
+	
 	   #Social Democracy
 		Peoples_Revolution = {
-			picture = GFX_peoples_revolution
+			picture = USC_party_of_the_people_idea
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.1
@@ -460,7 +493,7 @@ ideas = {
 		}
 
 		Democratic_Socialist_Mandate = {
-			picture = GFX_mandate_for_justice
+			picture = APA_peoples_assemblies
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.05
@@ -475,7 +508,7 @@ ideas = {
 		}
 
 		Ballot_Box_Socialism = {
-			picture = GFX_red_ballot
+			picture = APA_coffeehouse_socialism
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.05
@@ -490,7 +523,7 @@ ideas = {
 		}
 
 		People_Welfare_Guarantee = {
-			picture = GFX_welfare_state
+			picture = FRA_Welfare_State
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.2
@@ -506,7 +539,7 @@ ideas = {
 		}
 
 		Democratic_Socialist_Commonwealth = {
-			picture = GFX_socialist_governance
+			picture = SOV_new_democratic_socialism
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.1
@@ -521,6 +554,224 @@ ideas = {
 
 			}
 		}
+	   
+	   #Libertarian socialist
+	   
+		Freedom_Through_Solidarity = {
+			picture = CUB_island_of_freedom
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				weekly_manpower = 400
+				daily_political_power_gain = 0.1
+				consumer_goods_factor = -0.05
+				war_support_factor = 0.03
+				ideology_drift_defense = 0.05
+				libertarian_socialist_drift = 0.05
+				available_political_advisor_slots = 1
+				poverty_development_monthly = 0.02
+				farming_development_monthly = 0.02
+			}
+		}
+
+		Grassroots_Revolution = {
+			picture = PRV_Aragonese_Anarchism
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				ideology_drift_defense = 0.1
+				libertarian_socialist_drift = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		Syndicalist_Networks = {
+			picture = SOV_stratocratic_socialism
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				factory_output = 0.07
+				dockyard_output = 0.05
+				libertarian_socialist_drift = 0.05
+				resource_gain_efficiency = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.04
+				cooperative_development_monthly = 0.02
+			}
+		}
+
+		Abolish_the_State = {
+			picture = FPR_abolishingtheancientregime
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.2
+				foreign_subversive_activities = -0.25
+				enemy_operative_detection_chance = 0.15
+				libertarian_socialist_drift = 0.05
+				stability_factor = 0.05
+				operative_slots = 1
+			}
+		}
+
+		Libertarian_Socialist_Federation = {
+			picture = ARG_reforming_social_welfare
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				research_speed_factor = 0.2
+				political_power_cost = -0.1
+				consumer_goods_factor = -0.1
+				libertarian_socialist_drift = 0.03
+				society_development_monthly = 0.02
+			}
+		}
+
+	   #Commies 
+		Power_to_the_Proletariat = {
+			picture = SOV_rural_socialism_idea
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				daily_political_power_gain = 0.15
+				consumer_goods_factor = -0.1
+				war_support_factor = 0.1
+				communist_drift = 0.05
+				enemy_operative_detection_chance = 0.2
+				foreign_subversive_activities = -0.2
+				industrial_capacity_factory = 0.1
+				factory_output = 0.05
+			}
+		}
+		Revolutionary_Vanguard = {
+			picture = FPR_socialisteconomy_ns
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				daily_political_power_gain = 0.1
+				communist_drift = 0.03
+				political_advisor_cost_factor = -0.1
+				conscription_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		Total_Control_of_Production = {
+			picture = SOV_revitalized_socialism
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+				factory_output = 0.07
+				daily_political_power_gain = 0.05
+				research_speed_factor = 0.02
+			}
+		}
+
+		Iron_Curtain_of_Surveillance = {
+			picture = SOV_modernized_KGB_surveillance_idea
+			removal_cost = -1
+			modifier = {
+				enemy_operative_detection_chance = 0.3
+				foreign_subversive_activities = -0.3
+				ideology_drift_defense = 0.2
+				stability_factor = 0.05
+				daily_political_power_gain = 0.05
+			}
+		}
+
+		Red_Totalitarianism = {
+			picture = SOV_russian_stronghold_communist_idea
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				daily_political_power_gain = 0.2
+				consumer_goods_factor = -0.15
+				communist_drift = 0.05
+				research_speed_factor = 0.03
+				industrial_capacity_factory = 0.2
+				enemy_operative_detection_chance = 0.4
+				foreign_subversive_activities = -0.4
+				operative_detection_chance_factor = 0.2
+			}
+		}
+
+	   #Totalitarian_socialist
+		The_State_Is_All = {
+			picture = SOV_russian_stronghold_communist_idea
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				daily_political_power_gain = 0.15
+				consumer_goods_factor = -0.1
+				ideology_drift_defense = 0.15
+				political_advisor_cost_factor = -0.1
+				foreign_subversive_activities = -0.3
+				enemy_operative_detection_chance = 0.3
+				totalitarian_socialist_drift = 0.05
+			}
+		}
+
+		Ideological_Purification = {
+			picture = PRC_future_of_cyber_communism_idea
+			removal_cost = -1
+			modifier = {
+				ideology_drift_defense = 0.3
+				operative_detection_chance_factor = 0.2
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				recruitable_population_factor = 0.05
+				totalitarian_socialist_drift = 0.1
+				society_development_monthly = 0.02
+			}
+		}
+
+		Total_Command_Economy = {
+			picture = FPR_diplomaticrelaions_committe
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				factory_output = 0.1
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.05
+				totalitarian_socialist_drift = 0.03
+				industrial_development_monthly = 0.02
+			}
+		}
+
+		The_Surveillance_Apparatus = {
+			picture = PRC_vanguard_of_communism_idea
+			removal_cost = -1
+			modifier = {
+				enemy_operative_detection_chance = 0.4
+				ideology_drift_defense = 0.25
+				stability_factor = 0.05
+				daily_political_power_gain = 0.05
+				totalitarian_socialist_drift = 0.2
+				military_development_monthly = 0.02
+			}
+		}
+
+		The_Total_State = {
+			picture = SOV_beacon_of_worldwide_communism_idea
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				daily_political_power_gain = 0.2
+				research_speed_factor = 0.03
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.2
+				ideology_drift_defense = 0.3
+				operative_detection_chance_factor = 0.2
+				poverty_development_monthly = 0.01
+			}
+		}		
+								
 
 
 
