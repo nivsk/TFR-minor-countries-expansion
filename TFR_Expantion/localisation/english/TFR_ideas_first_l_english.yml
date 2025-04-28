@@ -1,176 +1,262 @@
 ﻿l_english:
- ### GOVERNMENT NATIONAL IDEAS ###
- Government_Tourbulenc: "The Start of the Political Campaign"
- Government_Tourbulenc_desc: "As political divisions deepen and national tensions rise, the race to capture the soul of the nation has begun. Parties old and new emerge from the shadows, rallying the public, courting the disillusioned, and promising salvation—or revolution.  This is the beginning of a campaign that may define not just a government, but an era. The turbulence is only just beginning."
+### GOVERNMENT NATIONAL IDEAS ###
+Government_Tourbulenc: "The Start of the Political Campaign"
+Government_Tourbulenc_desc: "As political divisions deepen and national tensions rise, the race to capture the soul of the nation has begun. Parties old and new emerge from the shadows, rallying the public, courting the disillusioned, and promising salvation—or revolution.  This is the beginning of a campaign that may define not just a government, but an era. The turbulence is only just beginning."
 
- Ultra_Right_Rally: "Marches of Fire and Fury"
- Ultra_Right_Rally_desc: "Extremist elements on the far-right have begun organizing across the country. Clad in symbols of order and tradition, they call for a return to “purity,” “discipline,” and “national strength.” Mass rallies erupt, displaying militarized unity and dangerous charisma.   What began as a whisper is now a roar—one that threatens to reshape society entirely."
+Ultra_Right_Rally: "Marches of Fire and Fury"
+Ultra_Right_Rally_desc: "Extremist elements on the far-right have begun organizing across the country. Clad in symbols of order and tradition, they call for a return to “purity,” “discipline,” and “national strength.” Mass rallies erupt, displaying militarized unity and dangerous charisma.   What began as a whisper is now a roar—one that threatens to reshape society entirely."
 
- Racial_purity: "Blood and Soil"
- Racial_purity_desc: "The movement now casts aside pretense. Beneath its polished speeches lies a core belief in racial hierarchy and exclusion. The state begins enshrining these ideals—culturally, legally, and demographically. Minorities, migrants, and “undesirables” are vilified. Eugenics and ethnonationalism take hold. This is not nationalism. This is biopolitics."
+Racial_purity: "Blood and Soil"
+Racial_purity_desc: "The movement now casts aside pretense. Beneath its polished speeches lies a core belief in racial hierarchy and exclusion. The state begins enshrining these ideals—culturally, legally, and demographically. Minorities, migrants, and “undesirables” are vilified. Eugenics and ethnonationalism take hold. This is not nationalism. This is biopolitics."
 
- Autocrats_Rally: "Autocrats' Rally"
- Autocrats_Rally_desc: "A rising tide of authoritarian rhetoric brings together reactionary elements under one banner."
+Autocrats_Rally: "Autocrats' Rally"
+Autocrats_Rally_desc: "A rising tide of authoritarian rhetoric brings together reactionary elements under one banner."
 
- Democrats_Rally: "Democrats Rally"
- Democrats_Rally_desc: "In times of uncertainty, moderate forces rally together, seeking to restore balance through democratic reform. Though unity grows among centrists, the resulting tensions strain national stability."
+Democrats_Rally: "Democrats Rally"
+Democrats_Rally_desc: "In times of uncertainty, moderate forces rally together, seeking to restore balance through democratic reform. Though unity grows among centrists, the resulting tensions strain national stability."
 
- Socialists_Rally: "Socialists Rally"
- Socialists_Rally_desc: "The fires of socialism are reigniting. Libertarian and authoritarian leftist movements surge forward, united by a common cause—but internal divisions and unrest simmer beneath the surface."
+Socialists_Rally: "Socialists Rally"
+Socialists_Rally_desc: "The fires of socialism are reigniting. Libertarian and authoritarian leftist movements surge forward, united by a common cause—but internal divisions and unrest simmer beneath the surface."
 
- Mobilized_masses: "The Engine of the Movement"
- Mobilized_masses_desc: "The party has achieved something its rivals only dream of—mass mobilization. Through propaganda, fear, loyalty, and spectacle, millions take to the streets, chanting in unison, obeying without hesitation. Youth leagues, paramilitaries, unions, and media all speak with one voice. The country is no longer watching the movement—it is living it."
+Mobilized_masses: "The Engine of the Movement"
+Mobilized_masses_desc: "The party has achieved something its rivals only dream of—mass mobilization. Through propaganda, fear, loyalty, and spectacle, millions take to the streets, chanting in unison, obeying without hesitation. Youth leagues, paramilitaries, unions, and media all speak with one voice. The country is no longer watching the movement—it is living it."
 
- Doctrine_of_Purity: "A Nation Forged Anew"
- Doctrine_of_Purity_desc: "Purity is no longer a slogan—it is a state religion. The movement seeks to engineer not just a new society, but a new citizen: loyal, obedient, and ideologically clean. Education, culture, and identity are rewritten. What began as a fringe vision is now official policy. The nation is no longer plural—it is singular. The final transformation has begun."
+Doctrine_of_Purity: "A Nation Forged Anew"
+Doctrine_of_Purity_desc: "Purity is no longer a slogan—it is a state religion. The movement seeks to engineer not just a new society, but a new citizen: loyal, obedient, and ideologically clean. Education, culture, and identity are rewritten. What began as a fringe vision is now official policy. The nation is no longer plural—it is singular. The final transformation has begun."
 
- Fascist_Mobilization: "Steel in the Veins"
- Fascist_Mobilization_desc: "With clenched fists and marching boots, the nation embraces the call to arms. The state fans the flames of fear and pride, transforming industry into war engines and citizens into soldiers. Discipline replaces debate; duty eclipses dissent. The heartbeat of the nation now pulses with iron resolve."
+Fascist_Mobilization: "Steel in the Veins"
+Fascist_Mobilization_desc: "With clenched fists and marching boots, the nation embraces the call to arms. The state fans the flames of fear and pride, transforming industry into war engines and citizens into soldiers. Discipline replaces debate; duty eclipses dissent. The heartbeat of the nation now pulses with iron resolve."
 
- Paramilitary_Expansion: "Legions of the Loyal"
- Paramilitary_Expansion_desc: "Beyond the official army, a new force rises—uniformed, zealous, and answerable only to the party. Trained in shadows and bred for obedience, these paramilitaries blur the line between security and suppression. Their loyalty is not to law, but to the will of the regime."
+Paramilitary_Expansion: "Legions of the Loyal"
+Paramilitary_Expansion_desc: "Beyond the official army, a new force rises—uniformed, zealous, and answerable only to the party. Trained in shadows and bred for obedience, these paramilitaries blur the line between security and suppression. Their loyalty is not to law, but to the will of the regime."
 
- Cultural_Uniformity_Fascism: "The One True Culture"
- Cultural_Uniformity_Fascism_desc: "Diversity is declared division; difference is branded as danger. Art, language, and history are stripped of nuance and remade into tools of statecraft. Dissenting traditions are erased. A single, state-sanctioned identity is raised—and all must wear its mask."
+Cultural_Uniformity_Fascism: "The One True Culture"
+Cultural_Uniformity_Fascism_desc: "Diversity is declared division; difference is branded as danger. Art, language, and history are stripped of nuance and remade into tools of statecraft. Dissenting traditions are erased. A single, state-sanctioned identity is raised—and all must wear its mask."
 
- Doctrine_of_Glory: "March of the Immortals"
- Doctrine_of_Glory_desc: "War is not tragedy—it is transcendence. The doctrine of glory turns every battlefield into a cathedral, every sacrifice into sainthood. The army is no longer just a force—it is the vessel through which the nation writes its epic. Victory is divine. Defeat, unthinkable."
+Doctrine_of_Glory: "March of the Immortals"
+Doctrine_of_Glory_desc: "War is not tragedy—it is transcendence. The doctrine of glory turns every battlefield into a cathedral, every sacrifice into sainthood. The army is no longer just a force—it is the vessel through which the nation writes its epic. Victory is divine. Defeat, unthinkable."
 
- Total_State_Control: "The Unseen Hand"
- Total_State_Control_desc: "Every transaction, every word, every breath is known. The state weaves itself into every thread of life—economic, social, and ideological. This is not governance. This is omnipresence. There is no outside. There is only order."
+Total_State_Control: "The Unseen Hand"
+Total_State_Control_desc: "Every transaction, every word, every breath is known. The state weaves itself into every thread of life—economic, social, and ideological. This is not governance. This is omnipresence. There is no outside. There is only order."
 
- Despotic_Shadow_Cabinet: "The Hidden Architects"
- Despotic_Shadow_Cabinet_desc: "Behind the podiums and titles, a cloaked circle guides the nation's fate. Unseen and unelected, they whisper commands that echo like law. Ministers are pawns, figureheads for a deeper will. Power lies not in public approval—but in secrecy and silence."
+Despotic_Shadow_Cabinet: "The Hidden Architects"
+Despotic_Shadow_Cabinet_desc: "Behind the podiums and titles, a cloaked circle guides the nation's fate. Unseen and unelected, they whisper commands that echo like law. Ministers are pawns, figureheads for a deeper will. Power lies not in public approval—but in secrecy and silence."
 
- Despotic_Intelligence_Expansion: "Eyes in the Walls"
- Despotic_Intelligence_Expansion_desc: "The regime casts a thousand eyes across the land. Surveillance becomes salvation, paranoia becomes policy. No whisper escapes, no room is safe. The enemy is everywhere—and everyone. In this state, to see all is to control all."
+Despotic_Intelligence_Expansion: "Eyes in the Walls"
+Despotic_Intelligence_Expansion_desc: "The regime casts a thousand eyes across the land. Surveillance becomes salvation, paranoia becomes policy. No whisper escapes, no room is safe. The enemy is everywhere—and everyone. In this state, to see all is to control all."
 
- Despotic_Internal_Control: "Chains of Harmony"
- Despotic_Internal_Control_desc: "Peace is maintained not through trust, but through total subjugation. Internal unrest is smothered under layers of coercion and propaganda. The populace marches in lockstep, their minds shaped to reject rebellion before it begins. The illusion of unity is complete."
+Despotic_Internal_Control: "Chains of Harmony"
+Despotic_Internal_Control_desc: "Peace is maintained not through trust, but through total subjugation. Internal unrest is smothered under layers of coercion and propaganda. The populace marches in lockstep, their minds shaped to reject rebellion before it begins. The illusion of unity is complete."
 
- Despotic_Martial_Directive: "Rule by the Gun"
- Despotic_Martial_Directive_desc: "When parliaments falter, the military speaks. A new order emerges—efficient, unyielding, and armored. Laws are decrees; rights are privileges. Civilians obey, or they disappear. The state is not a council. It is a command."
+Despotic_Martial_Directive: "Rule by the Gun"
+Despotic_Martial_Directive_desc: "When parliaments falter, the military speaks. A new order emerges—efficient, unyielding, and armored. Laws are decrees; rights are privileges. Civilians obey, or they disappear. The state is not a council. It is a command."
 
- Despotic_Elite_Council: "The Iron Court"
- Despotic_Elite_Council_desc: "A cabal of warlords, tycoons, and ideologues now rules from polished chambers and fortified halls. They promise strength, prosperity, and continuity—but only for the loyal. Dissenters are exiled, rivals removed. The council is eternal. The people, interchangeable."
+Despotic_Elite_Council: "The Iron Court"
+Despotic_Elite_Council_desc: "A cabal of warlords, tycoons, and ideologues now rules from polished chambers and fortified halls. They promise strength, prosperity, and continuity—but only for the loyal. Dissenters are exiled, rivals removed. The council is eternal. The people, interchangeable."
 
- Authoritarian_Democracy_Thought: "Order Through Representation"
- Authoritarian_Democracy_Thought_desc: "Democracy lives on—barely. Rebranded and tightly leashed, it becomes a tool of control rather than choice. Opposition is tolerated, but only in name. Elections occur, but outcomes are foregone. The people still vote. The state simply decides."
+Authoritarian_Democracy_Thought: "Order Through Representation"
+Authoritarian_Democracy_Thought_desc: "Democracy lives on—barely. Rebranded and tightly leashed, it becomes a tool of control rather than choice. Opposition is tolerated, but only in name. Elections occur, but outcomes are foregone. The people still vote. The state simply decides."
 
- Authoritarian_Civic_Activism: "The Guided Voice"
- Authoritarian_Civic_Activism_desc: "Activism is no longer grassroots—it is groomed. The regime cultivates civic action not to empower, but to channel. Youth movements, unions, and councils bloom under watchful eyes, their causes dictated from above. Passion is permitted—so long as it serves the state."
+Authoritarian_Civic_Activism: "The Guided Voice"
+Authoritarian_Civic_Activism_desc: "Activism is no longer grassroots—it is groomed. The regime cultivates civic action not to empower, but to channel. Youth movements, unions, and councils bloom under watchful eyes, their causes dictated from above. Passion is permitted—so long as it serves the state."
 
- Reconstruction_Authority: "Blueprints of Control"
- Reconstruction_Authority_desc: "As the dust settles from upheaval, a new infrastructure of power rises. Every brick laid, every plan approved, serves not just prosperity, but obedience. Roads lead to surveillance hubs. Factories hum with compliance. The future is rebuilt in the image of the regime."
+Reconstruction_Authority: "Blueprints of Control"
+Reconstruction_Authority_desc: "As the dust settles from upheaval, a new infrastructure of power rises. Every brick laid, every plan approved, serves not just prosperity, but obedience. Roads lead to surveillance hubs. Factories hum with compliance. The future is rebuilt in the image of the regime."
 
- Volunteer_Engagement_Plan: "Brothers Beyond Borders"
- Volunteer_Engagement_Plan_desc: "The struggle does not stop at the nation’s edge. Volunteers pour forth, inspired by ideology and fueled by purpose. They fight not for pay, but for belief—spreading revolution, order, or salvation abroad. Where the flag cannot fly, their boots land."
+Volunteer_Engagement_Plan: "Brothers Beyond Borders"
+Volunteer_Engagement_Plan_desc: "The struggle does not stop at the nation’s edge. Volunteers pour forth, inspired by ideology and fueled by purpose. They fight not for pay, but for belief—spreading revolution, order, or salvation abroad. Where the flag cannot fly, their boots land."
 
- Administrative_Balance_Council: "The Engine Room of the State"
- Administrative_Balance_Council_desc: "Behind the spectacle of politics lies a chamber of pragmatists—technocrats, strategists, and cold calculators. They tune the gears of governance, ensuring efficiency over ideology. Not out of compassion, but necessity. Survival demands precision."
+Administrative_Balance_Council: "The Engine Room of the State"
+Administrative_Balance_Council_desc: "Behind the spectacle of politics lies a chamber of pragmatists—technocrats, strategists, and cold calculators. They tune the gears of governance, ensuring efficiency over ideology. Not out of compassion, but necessity. Survival demands precision."
 
- Conservative_Campaign_Launch: "A Nation to Preserve"
- Conservative_Campaign_Launch_desc: "A political awakening rooted in patriotism, national heritage, and moral clarity. The conservative movement begins rallying support from those yearning for stability and order."
+Conservative_Campaign_Launch: "A Nation to Preserve"
+Conservative_Campaign_Launch_desc: "A political awakening rooted in patriotism, national heritage, and moral clarity. The conservative movement begins rallying support from those yearning for stability and order."
 
- Family_and_Tradition: "Tradition and Stability"
- Family_and_Tradition_desc: "Institutions matter. A revitalized respect for family, culture, and the rule of law ensures continuity in a world of chaos. The message is clear: change must be grounded in tradition."
+Family_and_Tradition: "Tradition and Stability"
+Family_and_Tradition_desc: "Institutions matter. A revitalized respect for family, culture, and the rule of law ensures continuity in a world of chaos. The message is clear: change must be grounded in tradition."
 
- Pillars_of_Society: "The Pillars of Society"
- Pillars_of_Society_desc: "Faith, community, and responsibility—these are the foundations of a functioning society. The government strengthens its alignment with religious institutions and civic organizations."
+Pillars_of_Society: "The Pillars of Society"
+Pillars_of_Society_desc: "Faith, community, and responsibility—these are the foundations of a functioning society. The government strengthens its alignment with religious institutions and civic organizations."
 
- Market_and_Morality: "Markets with Morals"
- Market_and_Morality_desc: "Economic freedom must serve social cohesion. We promote entrepreneurship, but with strong moral and legal frameworks to guard against decadence and corruption."
+Market_and_Morality: "Markets with Morals"
+Market_and_Morality_desc: "Economic freedom must serve social cohesion. We promote entrepreneurship, but with strong moral and legal frameworks to guard against decadence and corruption."
 
- Order_and_Tradition: "Order and Tradition"
- Order_and_Tradition_desc: "The conservative vision is now in full bloom: a disciplined, virtuous society guided by historical values and structured hierarchy. Order is not oppression—it is the soil in which freedom flourishes."
+Order_and_Tradition: "Order and Tradition"
+Order_and_Tradition_desc: "The conservative vision is now in full bloom: a disciplined, virtuous society guided by historical values and structured hierarchy. Order is not oppression—it is the soil in which freedom flourishes."
 
- Anarcho_Capitalist_Awakening: "Anarcho-Capitalist Awakening"
- Anarcho_Capitalist_Awakening_desc: "The first spark has been lit. Free-market ideals are gaining traction across the country. The state is beginning to wither—not by force, but by choice. Entrepreneurs, not bureaucrats, are taking the lead."
+Anarcho_Capitalist_Awakening: "Anarcho-Capitalist Awakening"
+Anarcho_Capitalist_Awakening_desc: "The first spark has been lit. Free-market ideals are gaining traction across the country. The state is beginning to wither—not by force, but by choice. Entrepreneurs, not bureaucrats, are taking the lead."
 
- Total_Deregulation: "Total Deregulation"
- Total_Deregulation_desc: "All remaining market restrictions have been scrapped. Licensing requirements, labor regulations, environmental codes—all thrown into the dustbin of history. Risk and reward now reign supreme."
+Total_Deregulation: "Total Deregulation"
+Total_Deregulation_desc: "All remaining market restrictions have been scrapped. Licensing requirements, labor regulations, environmental codes—all thrown into the dustbin of history. Risk and reward now reign supreme."
 
- Privatization_Blitz: "Privatization Blitz"
- Privatization_Blitz_desc: "We've launched a sweeping sell-off of all state assets—from railroads to power grids, from post offices to pensions. The public sector has been gutted in favor of private ownership and profit-driven efficiency."
+Privatization_Blitz: "Privatization Blitz"
+Privatization_Blitz_desc: "We've launched a sweeping sell-off of all state assets—from railroads to power grids, from post offices to pensions. The public sector has been gutted in favor of private ownership and profit-driven efficiency."
 
- Market_Supremacy: "Market Supremacy"
- Market_Supremacy_desc: "The free market has been elevated above all. It is the guiding force of policy, the judge of value, and the engine of society. Ideology, morality, and tradition all bow before the logic of the transaction."
+Market_Supremacy: "Market Supremacy"
+Market_Supremacy_desc: "The free market has been elevated above all. It is the guiding force of policy, the judge of value, and the engine of society. Ideology, morality, and tradition all bow before the logic of the transaction."
 
- Stateless_Capitalism: "Stateless Capitalism"
- Stateless_Capitalism_desc: "We have realized the dream of anarcho-capitalism. The state exists in name only. All functions have been outsourced, privatized, and absorbed into the market. Justice is competitive, infrastructure is efficient, and freedom is absolute."
+Stateless_Capitalism: "Stateless Capitalism"
+Stateless_Capitalism_desc: "We have realized the dream of anarcho-capitalism. The state exists in name only. All functions have been outsourced, privatized, and absorbed into the market. Justice is competitive, infrastructure is efficient, and freedom is absolute."
 
 #aaaa
- Social_Liberal_Reform_Movement: "Social Liberal Reform Movement"
- Social_Liberal_Reform_Movement_desc: "We believe that freedom is not just the absence of oppression—but the presence of opportunity. This reform movement seeks to reduce inequality, strengthen civil society, and empower the individual through liberty and responsibility."
+Social_Liberal_Reform_Movement: "Social Liberal Reform Movement"
+Social_Liberal_Reform_Movement_desc: "We believe that freedom is not just the absence of oppression—but the presence of opportunity. This reform movement seeks to reduce inequality, strengthen civil society, and empower the individual through liberty and responsibility."
 
- Balanced_Capitalism: "Balanced Capitalism"
- Balanced_Capitalism_desc: "Markets should be free—but not lawless. By balancing private enterprise with social responsibility, we will foster innovation while safeguarding public welfare. Regulation and competition will work hand in hand."
+Balanced_Capitalism: "Balanced Capitalism"
+Balanced_Capitalism_desc: "Markets should be free—but not lawless. By balancing private enterprise with social responsibility, we will foster innovation while safeguarding public welfare. Regulation and competition will work hand in hand."
 
- Regulated_Market_Initiative: "Regulated Market Initiative"
- Regulated_Market_Initiative_desc: "Unregulated markets breed instability. With this initiative, we embrace smart governance: optimizing productivity, fair trade, and sustainable development while preserving the dynamism of a capitalist economy."
+Regulated_Market_Initiative: "Regulated Market Initiative"
+Regulated_Market_Initiative_desc: "Unregulated markets breed instability. With this initiative, we embrace smart governance: optimizing productivity, fair trade, and sustainable development while preserving the dynamism of a capitalist economy."
 
- Global_Engagement_Pact: "Global Engagement Pact"
- Global_Engagement_Pact_desc: "We are not alone in this world. Through diplomatic cooperation, international institutions, and mutual defense, we will build a peaceful, prosperous future founded on multilateralism and global partnership."
+Global_Engagement_Pact: "Global Engagement Pact"
+Global_Engagement_Pact_desc: "We are not alone in this world. Through diplomatic cooperation, international institutions, and mutual defense, we will build a peaceful, prosperous future founded on multilateralism and global partnership."
 
- Modern_Liberal_Consensus: "Modern Liberal Consensus"
- Modern_Liberal_Consensus_desc: "The liberal world order has matured. With robust democratic institutions, a market economy tempered by reason, and a vibrant civil society, we now embody a model of governance that merges liberty with progress."
+Modern_Liberal_Consensus: "Modern Liberal Consensus"
+Modern_Liberal_Consensus_desc: "The liberal world order has matured. With robust democratic institutions, a market economy tempered by reason, and a vibrant civil society, we now embody a model of governance that merges liberty with progress."
 
- Peoples_Revolution: "People's Revolution"
- Peoples_Revolution_desc: "The revolution does not belong to a vanguard—it belongs to every citizen. Through collective action and democratic will, we will transform society, ensuring that freedom, justice, and equality are not privileges for the few but rights for all."
+Peoples_Revolution: "People's Revolution"
+Peoples_Revolution_desc: "The revolution does not belong to a vanguard—it belongs to every citizen. Through collective action and democratic will, we will transform society, ensuring that freedom, justice, and equality are not privileges for the few but rights for all."
 
- Democratic_Socialist_Mandate: "Democratic Socialist Mandate"
- Democratic_Socialist_Mandate_desc: "Our people have given us a powerful mandate: to reshape the nation in the name of justice, equality, and solidarity. We will honor this trust by building institutions that protect rights, expand opportunity, and place democracy at the heart of economic life."
+Democratic_Socialist_Mandate: "Democratic Socialist Mandate"
+Democratic_Socialist_Mandate_desc: "Our people have given us a powerful mandate: to reshape the nation in the name of justice, equality, and solidarity. We will honor this trust by building institutions that protect rights, expand opportunity, and place democracy at the heart of economic life."
 
- Ballot_Box_Socialism: "Ballot Box Socialism"
- Ballot_Box_Socialism_desc: "True socialism is not imposed by force—it is chosen by the people. Through the ballot box, we have won the right to rebuild the economy for the many, not the few. Now, bold reforms will follow popular will."
+Ballot_Box_Socialism: "Ballot Box Socialism"
+Ballot_Box_Socialism_desc: "True socialism is not imposed by force—it is chosen by the people. Through the ballot box, we have won the right to rebuild the economy for the many, not the few. Now, bold reforms will follow popular will."
 
- People_Welfare_Guarantee: "People's Welfare Guarantee"
- People_Welfare_Guarantee_desc: "We declare that no citizen shall be abandoned to poverty, sickness, or ignorance. A strong, compassionate state will guarantee healthcare, education, and social support for all, securing human dignity as a right, not a luxury."
+People_Welfare_Guarantee: "People's Welfare Guarantee"
+People_Welfare_Guarantee_desc: "We declare that no citizen shall be abandoned to poverty, sickness, or ignorance. A strong, compassionate state will guarantee healthcare, education, and social support for all, securing human dignity as a right, not a luxury."
 
- Democratic_Socialist_Commonwealth: "Democratic Socialist Commonwealth"
- Democratic_Socialist_Commonwealth_desc: "At last, we have created a society where democracy governs not just the halls of power, but the factories, the fields, and the markets. Our commonwealth stands as a beacon of solidarity, liberty, and social prosperity."
+Democratic_Socialist_Commonwealth: "Democratic Socialist Commonwealth"
+Democratic_Socialist_Commonwealth_desc: "At last, we have created a society where democracy governs not just the halls of power, but the factories, the fields, and the markets. Our commonwealth stands as a beacon of solidarity, liberty, and social prosperity."
 
- Freedom_Through_Solidarity: "Freedom Through Solidarity"
- Freedom_Through_Solidarity_desc: "True freedom is born from cooperation, not domination. By dismantling hierarchy and building networks of solidarity, we empower communities to govern themselves. Our revolution begins with mutual aid, grassroots democracy, and a commitment to collective liberation."
+Freedom_Through_Solidarity: "Freedom Through Solidarity"
+Freedom_Through_Solidarity_desc: "True freedom is born from cooperation, not domination. By dismantling hierarchy and building networks of solidarity, we empower communities to govern themselves. Our revolution begins with mutual aid, grassroots democracy, and a commitment to collective liberation."
 
- Grassroots_Revolution: "Grassroots Revolution"
- Grassroots_Revolution_desc: "Power grows from the ground up. By organizing workers, neighborhoods, and communities into a living network of resistance, we ignite a revolution that no authority can suppress."
+Grassroots_Revolution: "Grassroots Revolution"
+Grassroots_Revolution_desc: "Power grows from the ground up. By organizing workers, neighborhoods, and communities into a living network of resistance, we ignite a revolution that no authority can suppress."
 
- Syndicalist_Networks: "Syndicalist Networks"
- Syndicalist_Networks_desc: "Syndicates—free associations of workers—will replace capitalist and bureaucratic control. Industries will be managed collectively, with coordination based on need, solidarity, and shared purpose."
+Syndicalist_Networks: "Syndicalist Networks"
+Syndicalist_Networks_desc: "Syndicates—free associations of workers—will replace capitalist and bureaucratic control. Industries will be managed collectively, with coordination based on need, solidarity, and shared purpose."
 
- Abolish_the_State: "Abolish the State"
- Abolish_the_State_desc: "The state, as a tool of oppression, has no place in a free society. We will dismantle centralized power structures, replacing them with federations of autonomous communities bound by mutual respect and solidarity."
+Abolish_the_State: "Abolish the State"
+Abolish_the_State_desc: "The state, as a tool of oppression, has no place in a free society. We will dismantle centralized power structures, replacing them with federations of autonomous communities bound by mutual respect and solidarity."
 
- Libertarian_Socialist_Federation: "Libertarian Socialist Federation"
- Libertarian_Socialist_Federation_desc: "The old order has fallen. In its place stands a federation of free communes, worker councils, and cooperative societies. No rulers, no masters—only self-governance through unity and shared freedom."
+Libertarian_Socialist_Federation: "Libertarian Socialist Federation"
+Libertarian_Socialist_Federation_desc: "The old order has fallen. In its place stands a federation of free communes, worker councils, and cooperative societies. No rulers, no masters—only self-governance through unity and shared freedom."
 
- Power_to_the_Proletariat: "Power to the Proletariat"
- Power_to_the_Proletariat_desc: "The chains of capitalism will be shattered by the iron will of the working class. Through revolutionary struggle and centralized leadership, we seize the means of production and build a new world where labor, not greed, commands society."
+Power_to_the_Proletariat: "Power to the Proletariat"
+Power_to_the_Proletariat_desc: "The chains of capitalism will be shattered by the iron will of the working class. Through revolutionary struggle and centralized leadership, we seize the means of production and build a new world where labor, not greed, commands society."
 
- Revolutionary_Vanguard: "Revolutionary Vanguard"
- Revolutionary_Vanguard_desc: "A disciplined revolutionary vanguard is essential to guide the masses, suppress counter-revolution, and ensure the triumph of socialist ideals. Without leadership, revolution falls to chaos."
+Revolutionary_Vanguard: "Revolutionary Vanguard"
+Revolutionary_Vanguard_desc: "A disciplined revolutionary vanguard is essential to guide the masses, suppress counter-revolution, and ensure the triumph of socialist ideals. Without leadership, revolution falls to chaos."
 
- Total_Control_of_Production: "Total Control of Production"
- Total_Control_of_Production_desc: "The economy must serve the people, not private interests. Total state control of industry and labor will guarantee equality, efficiency, and the victory of socialism."
+Total_Control_of_Production: "Total Control of Production"
+Total_Control_of_Production_desc: "The economy must serve the people, not private interests. Total state control of industry and labor will guarantee equality, efficiency, and the victory of socialism."
 
- Iron_Curtain_of_Surveillance: "Iron Curtain of Surveillance"
- Iron_Curtain_of_Surveillance_desc: "Enemies of progress lurk in every shadow. Vigilance through surveillance and control ensures that no saboteur, no dissident, and no traitor can undermine the revolution from within."
+Iron_Curtain_of_Surveillance: "Iron Curtain of Surveillance"
+Iron_Curtain_of_Surveillance_desc: "Enemies of progress lurk in every shadow. Vigilance through surveillance and control ensures that no saboteur, no dissident, and no traitor can undermine the revolution from within."
 
- Red_Totalitarianism: "Red Totalitarianism"
- Red_Totalitarianism_desc: "The revolution has transcended. The state, the party, and the people move as one unified force, forging an unstoppable socialist order. Discipline, loyalty, and unity are eternal."
+Red_Totalitarianism: "Red Totalitarianism"
+Red_Totalitarianism_desc: "The revolution has transcended. The state, the party, and the people move as one unified force, forging an unstoppable socialist order. Discipline, loyalty, and unity are eternal."
 
- The_State_Is_All: "The State Is All"
- The_State_Is_All_desc: "Individuality is obsolete; freedom is a facade. The state embodies the collective will, absorbing every thought, every act, every soul. Surveillance is security, obedience is strength, and loyalty is virtue. The state provides all."
+The_State_Is_All: "The State Is All"
+The_State_Is_All_desc: "Individuality is obsolete; freedom is a facade. The state embodies the collective will, absorbing every thought, every act, every soul. Surveillance is security, obedience is strength, and loyalty is virtue. The state provides all."
 
- Ideological_Purification: "Ideological Purification"
- Ideological_Purification_desc: "Only total loyalty can guarantee survival. Reformists, anarchists, and reactionaries will be rooted out without mercy. Purity of ideology is the foundation of unity—and unity is life."
+Ideological_Purification: "Ideological Purification"
+Ideological_Purification_desc: "Only total loyalty can guarantee survival. Reformists, anarchists, and reactionaries will be rooted out without mercy. Purity of ideology is the foundation of unity—and unity is life."
 
- Total_Command_Economy: "Total Command Economy"
- Total_Command_Economy_desc: "Markets breed chaos and greed. By seizing all production and planning every detail of economic life, we will eliminate waste, competition, and uncertainty. Efficiency will be dictated from above."
+Total_Command_Economy: "Total Command Economy"
+Total_Command_Economy_desc: "Markets breed chaos and greed. By seizing all production and planning every detail of economic life, we will eliminate waste, competition, and uncertainty. Efficiency will be dictated from above."
 
- The_Surveillance_Apparatus: "The Surveillance Apparatus"
- The_Surveillance_Apparatus_desc: "Rebellion is born in secrecy. We will extinguish it before it stirs. Through total surveillance, informant networks, and state security forces, every whisper of dissent will be heard—and crushed."
+The_Surveillance_Apparatus: "The Surveillance Apparatus"
+The_Surveillance_Apparatus_desc: "Rebellion is born in secrecy. We will extinguish it before it stirs. Through total surveillance, informant networks, and state security forces, every whisper of dissent will be heard—and crushed."
 
- The_Total_State: "The Total State"
- The_Total_State_desc: "The people and the state are no longer separate. There is no more deviation, no more doubt. We are one: an immortal ideological engine, perfect in loyalty, discipline, and purpose."
+The_Total_State: "The Total State"
+The_Total_State_desc: "The people and the state are no longer separate. There is no more deviation, no more doubt. We are one: an immortal ideological engine, perfect in loyalty, discipline, and purpose."
+
+
+
+
+energy_policy_idea: "Energy Independence Plan"
+energy_policy_idea_desc: "The nation is determined to achieve full energy independence by improving production and optimizing key sectors that provide power. This policy focuses on enhancing infrastructure, railways, nuclear reactors, energy farms, power plants, and synthetic refineries. While these changes require significant effort, the long-term benefits include a stable, self-sufficient energy system. However, the rapid expansion may come at the cost of short-term stability, but the nation will be much stronger in the future as it becomes less reliant on foreign energy resources."
+
+
+energy_policy_idea_1: "Energy Independence Plan"
+energy_policy_idea_1_desc: "The nation is determined to achieve full energy independence by improving production and optimizing key sectors that provide power. This policy focuses on enhancing infrastructure, railways, nuclear reactors, energy farms, power plants, and synthetic refineries. While these changes require significant effort, the long-term benefits include a stable, self-sufficient energy system. However, the rapid expansion may come at the cost of short-term stability, but the nation will be much stronger in the future as it becomes less reliant on foreign energy resources."
+
+
+energy_policy_idea_2: "Energy Independence Plan"
+energy_policy_idea_2_desc: "The nation is determined to achieve full energy independence by improving production and optimizing key sectors that provide power. This policy focuses on enhancing infrastructure, railways, nuclear reactors, energy farms, power plants, and synthetic refineries. While these changes require significant effort, the long-term benefits include a stable, self-sufficient energy system. However, the rapid expansion may come at the cost of short-term stability, but the nation will be much stronger in the future as it becomes less reliant on foreign energy resources."
+
+
+energy_policy_idea_3: "Energy Independence Plan"
+energy_policy_idea_3_desc: "The nation is determined to achieve full energy independence by improving production and optimizing key sectors that provide power. This policy focuses on enhancing infrastructure, railways, nuclear reactors, energy farms, power plants, and synthetic refineries. While these changes require significant effort, the long-term benefits include a stable, self-sufficient energy system. However, the rapid expansion may come at the cost of short-term stability, but the nation will be much stronger in the future as it becomes less reliant on foreign energy resources."
+
+
+energy_policy_idea_4: "Energy Independence Plan"
+energy_policy_idea_4_desc: "Embracing the industrial might of coal, the nation reverts to the tried-and-true energy source that built the modern world. Coal will power the factories, railways, and energy plants, fueling the nation's growing demands. While coal provides a steady, powerful supply of energy, its use will come at a cost, with potential environmental concerns and a reliance on fossil fuels. This path ensures energy security but at the expense of long-term sustainability, keeping the nation's industries running at full speed."
+
+energy_policy_idea_5: "Energy Independence Plan"
+energy_policy_idea_5_desc: "In the pursuit of a powerful and sustainable future, the nation shifts entirely to nuclear energy. Harnessing the immense potential of nuclear reactors, the country will now depend on clean, efficient, and highly concentrated energy sources to power its industries, infrastructure, and military. This path offers unmatched energy output, but it requires a strong commitment to safety and advanced technology. As the nation's energy needs become more centralized and less reliant on traditional sources, nuclear power will ensure both energy independence and dominance on the global stage."
+
+energy_policy_idea_6: "Energy Independence Plan"
+energy_policy_idea_6_desc: "The nation makes the bold decision to completely transition to green, renewable energy sources. By investing heavily in wind, solar, and other eco-friendly technologies, the country aims to eliminate its reliance on fossil fuels and create a cleaner, more sustainable future. This path offers a significant reduction in environmental impact, alongside a more resilient and diverse energy network. However, the transition to green energy will require substantial infrastructure changes and innovation, making the shift a long-term investment in both energy independence and environmental responsibility."
+
+
+
+industrial_ideas_1: "Early Industrial Expansion"
+industrial_ideas_1_desc: "Our initial industrial efforts have begun. Although inefficient and costly, the first steps are essential to kickstart broader economic modernization."
+
+industrial_ideas_2: "Growing Industrial Base"
+industrial_ideas_2_desc: "The industrial sector is expanding steadily. Resource extraction and factory production are increasing, setting the foundation for further growth."
+
+industrial_ideas_3: "Resource-Fueled Expansion"
+industrial_ideas_3_desc: "With better access to resources and a small boost in oil production, our industrial might is becoming a key pillar of national strength."
+
+industrial_ideas_4: "Industrial Maturity"
+industrial_ideas_4_desc: "Our industries have matured, with strong resource flows and refined production techniques ensuring a sustainable expansion."
+
+industrial_ideas_5: "Diversified Economic Growth"
+industrial_ideas_5_desc: "Investments into both industry and office infrastructure are paying off. Economic diversification is reducing poverty and supporting broader development."
+
+industrial_ideas_6: "Urban Industrialization"
+industrial_ideas_6_desc: "Massive urban and industrial growth has transformed the economy. Office parks and factories work together to create a strong and dynamic economic engine."
+
+industrial_ideas_7: "Military-Industrial Complex"
+industrial_ideas_7_desc: "The economy has fully embraced militarization. Industrial and military production have merged into a powerful military-industrial complex ready for any challenge."
+
+industrial_ideas_8: "Total Industrial Dominance"
+industrial_ideas_8_desc: "Our economy has reached its peak, with overwhelming industrial capacity and military production. We now stand as a dominant industrial power on the global stage."
+
+
+army_ideas_1: "Disorganized Military Forces"
+army_ideas_1_desc: "Our army struggles with outdated doctrines, poor coordination, and low morale. While our troops gain valuable combat experience, they are hampered by ineffective leadership and sluggish operations. Major reforms are urgently needed."
+
+army_ideas_2: "Initial Military Reforms"
+army_ideas_2_desc: "Early reforms are beginning to take hold, slightly improving efficiency and battlefield cohesion. However, systemic flaws still hinder true modernization, and our forces remain far from reaching their full potential."
+
+army_ideas_3: "Standardization Efforts"
+army_ideas_3_desc: "A push toward standardization and modernization has helped stabilize our forces. Training quality is rising, logistical frameworks are improving, and outdated tactics are slowly being replaced — though challenges remain."
+
+army_ideas_4: "Professional Corps Formation"
+army_ideas_4_desc: "A core of professional soldiers and competent officers is emerging within our ranks. While not yet perfect, our army now displays higher morale, better coordination, and an increasing capacity to execute complex operations."
+
+army_ideas_5: "Modernized Armed Forces"
+army_ideas_5_desc: "Our army now stands as a modern and highly capable fighting force. With enhanced speed, morale, and organization, our military is ready to operate with greater initiative and decisiveness on any battlefield."
+
+army_ideas_6: "Infantry-Centric Force Structure"
+army_ideas_6_desc: "Specialization around elite infantry and powerful artillery support ensures our forces can dominate in various terrains and conditions. Through superior resilience, adaptability, and precise firepower, our infantry forms the unbreakable core of our army."
+
+army_ideas_7: "Mechanized Warfare Doctrine"
+army_ideas_7_desc: "Focusing on mechanized and motorized units, our army emphasizes rapid, flexible warfare. Supported by highly mobile cavalry elements and improved tactical coordination, we can strike swiftly, break through defenses, and maintain relentless operational momentum."
+
+army_ideas_8: "Armored Warfare Supremacy"
+army_ideas_8_desc: "Prioritizing tanks and heavy armored forces, our army is designed to deliver crushing blows to enemy formations. Superior protection, overwhelming firepower, and fast breakthrough capabilities make armored warfare the spearhead of our military strategy."
+
+
+
+
+
+
+

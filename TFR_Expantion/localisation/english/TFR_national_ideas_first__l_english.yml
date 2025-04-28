@@ -1,144 +1,267 @@
 ﻿l_english:
- ### GOVERNMENT NATIONAL IDEAS ###
+### GOVERNMENT NATIONAL IDEAS ###
 
- political_start: "Determine the Future"
- political_start_desc: "The world has changed—and with it, so too must our nation. The political status quo is no longer sustainable. Crises—economic, social, military—are mounting with no end in sight. Public trust in institutions is eroding, and ideological tensions are boiling beneath the surface. The people demand answers. Not from yesterday’s politicians, but from a new vision—bold, uncompromising, and transformative. This focus marks the moment when the state opens itself to political realignment. The future is no longer a straight line. This is where it begins."
- political_afl_socialism: "Revolution Through Equality"
- political_afl_socialism_desc: "The current system is rotten to its core—propped up by greed, inequality, and the illusion of freedom. True justice can only be achieved through the complete dismantling of the capitalist order. The means of production must be seized, and wealth redistributed without compromise. A classless society isn’t just a dream—it’s a necessity. Through revolution, not reform, we will build a future where power lies with the people, not the privileged."
- political_afl_democratic: "Power of the People"
- political_afl_democratic_desc: "Power belongs in the hands of the people. Through open debate, fair elections, and equal representation, democracy ensures that no voice is too small to be heard. It is not perfect, but it adapts, reforms, and grows stronger through the will of the many. In a democratic society, compromise is strength, and progress is built on shared responsibility and trust in the rule of law. Here, freedom thrives—not by force, but by choice."
- political_afl_autocracy: "Order Above All"
- political_afl_autocracy_desc: "A nation without order is a nation in decline. In an age where values are diluted and traditions cast aside, we stand for strength, unity, and continuity. Autocracy defends the time-honored principles that built our society—family, faith, duty, and national pride. Democracy has become a theater of division, but under firm leadership, we restore clarity and direction. Freedom is not chaos; it is discipline, guided by purpose. Through authority, we preserve what matters most."
- political_afl_ultra_right: "Purity Through Strength"
- political_afl_ultra_right_desc: "The weak have ruled long enough. Democracy, tolerance, and equality are the lies that have poisoned our blood and shamed our ancestors. True order is born through strength, through unity of race, culture, and will. We reject decay and softness—only through discipline, sacrifice, and the cleansing fire of nationalism can our people rise again. There is no compromise. There is only destiny. One nation, one people, one future."
+political_start: "Determine the Future"
+political_start_desc: "The world has changed—and with it, so too must our nation. The political status quo is no longer sustainable. Crises—economic, social, military—are mounting with no end in sight. Public trust in institutions is eroding, and ideological tensions are boiling beneath the surface. The people demand answers. Not from yesterday’s politicians, but from a new vision—bold, uncompromising, and transformative. This focus marks the moment when the state opens itself to political realignment. The future is no longer a straight line. This is where it begins."
+political_afl_socialism: "Revolution Through Equality"
+political_afl_socialism_desc: "The current system is rotten to its core—propped up by greed, inequality, and the illusion of freedom. True justice can only be achieved through the complete dismantling of the capitalist order. The means of production must be seized, and wealth redistributed without compromise. A classless society isn’t just a dream—it’s a necessity. Through revolution, not reform, we will build a future where power lies with the people, not the privileged."
+political_afl_democratic: "Power of the People"
+political_afl_democratic_desc: "Power belongs in the hands of the people. Through open debate, fair elections, and equal representation, democracy ensures that no voice is too small to be heard. It is not perfect, but it adapts, reforms, and grows stronger through the will of the many. In a democratic society, compromise is strength, and progress is built on shared responsibility and trust in the rule of law. Here, freedom thrives—not by force, but by choice."
+political_afl_autocracy: "Order Above All"
+political_afl_autocracy_desc: "A nation without order is a nation in decline. In an age where values are diluted and traditions cast aside, we stand for strength, unity, and continuity. Autocracy defends the time-honored principles that built our society—family, faith, duty, and national pride. Democracy has become a theater of division, but under firm leadership, we restore clarity and direction. Freedom is not chaos; it is discipline, guided by purpose. Through authority, we preserve what matters most."
+political_afl_ultra_right: "Purity Through Strength"
+political_afl_ultra_right_desc: "The weak have ruled long enough. Democracy, tolerance, and equality are the lies that have poisoned our blood and shamed our ancestors. True order is born through strength, through unity of race, culture, and will. We reject decay and softness—only through discipline, sacrifice, and the cleansing fire of nationalism can our people rise again. There is no compromise. There is only destiny. One nation, one people, one future."
 
- political_total_socialism: "The State Is All"
- political_total_socialism_desc: "Individuality is a relic. Freedom is an illusion. The path to true equality lies not in chaos, but in total unity—achieved only through the absolute power of the state. Every resource, every citizen, every thought belongs to the collective. Surveillance is not oppression—it is protection. Obedience is not weakness—it is virtue. There is no room for doubt, for dissent, or for division. The state sees all. The state knows all. The state provides all."
- political_total_socialism_first: "Ideological Purification"
- political_total_socialism_first_desc: "Before we can build the perfect society, we must cleanse it of impurity. Capitalists, reformists, anarchists, and enemies of the revolution—there is no place for half-measures. Loyalty will be absolute, or it will be punished."
- political_total_socialism_second: "Total Command Economy"
- political_total_socialism_second_desc: "Free markets are chaos. We will seize all means of production, abolish private ownership, and assign labor through central planning. There will be no surplus, no competition—only allocation."
- political_total_socialism_third: "The Surveillance Apparatus"
- political_total_socialism_third_desc: "No rebellion can succeed if it is crushed before it breathes. With vast data networks, informant systems, and secret police, the state will know your thoughts before you think them. Safety through submission."
- political_total_socialism_forth: "The Total State"
- political_total_socialism_forth_desc: "We have created a society without opposition, deviation, or doubt. Every mind is loyal. Every hand belongs to the state. We are not a nation—we are an ideological machine. Immortal. Unquestioned. Absolute."
+political_total_socialism: "The State Is All"
+political_total_socialism_desc: "Individuality is a relic. Freedom is an illusion. The path to true equality lies not in chaos, but in total unity—achieved only through the absolute power of the state. Every resource, every citizen, every thought belongs to the collective. Surveillance is not oppression—it is protection. Obedience is not weakness—it is virtue. There is no room for doubt, for dissent, or for division. The state sees all. The state knows all. The state provides all."
+political_total_socialism_first: "Ideological Purification"
+political_total_socialism_first_desc: "Before we can build the perfect society, we must cleanse it of impurity. Capitalists, reformists, anarchists, and enemies of the revolution—there is no place for half-measures. Loyalty will be absolute, or it will be punished."
+political_total_socialism_second: "Total Command Economy"
+political_total_socialism_second_desc: "Free markets are chaos. We will seize all means of production, abolish private ownership, and assign labor through central planning. There will be no surplus, no competition—only allocation."
+political_total_socialism_third: "The Surveillance Apparatus"
+political_total_socialism_third_desc: "No rebellion can succeed if it is crushed before it breathes. With vast data networks, informant systems, and secret police, the state will know your thoughts before you think them. Safety through submission."
+political_total_socialism_forth: "The Total State"
+political_total_socialism_forth_desc: "We have created a society without opposition, deviation, or doubt. Every mind is loyal. Every hand belongs to the state. We are not a nation—we are an ideological machine. Immortal. Unquestioned. Absolute."
 
- political_authoritarian_socialism: "Power to the Proletariat"
- political_authoritarian_socialism_desc: "The chains of capitalism will be broken—not by compromise, but by force. The working class must rise, and the state shall lead them. Through collective ownership, central planning, and revolutionary discipline, we forge a classless future. The party is the vanguard; the people, its strength. Dissent serves the bourgeoisie—unity is the weapon of the worker. Equality is not given. It is taken, secured, and protected by the iron will of the revolution."
- political_authoritarian_socialism_first: "Revolutionary Vanguard"
- political_authoritarian_socialism_first_desc: "History shows that masses can be misguided, corrupted, or betrayed. Only a disciplined vanguard can carry the revolution forward and crush opposition before it takes root."
- political_authoritarian_socialism_second: "Total Control of Production"
- political_authoritarian_socialism_second_desc: "The economy is too important to leave to chaos or private interests. The state must directly control production, distribution, and labor. There will be no room for greed, only service to the collective."
- political_authoritarian_socialism_third: "Iron Curtain of Surveillance"
- political_authoritarian_socialism_third_desc: "Enemies of the revolution lurk everywhere—within and without. Freedom without vigilance is suicide. We must weave a web of surveillance, intelligence, and loyalty to strangle counter-revolution in its crib."
- political_authoritarian_socialism_forth: "Red Totalitarianism"
- political_authoritarian_socialism_forth_desc: "The state is the people. The people are the state. We have fused ideology, party, and nation into a single, unbreakable organism. A perfect socialist society: disciplined, centralized, and eternal."
+political_authoritarian_socialism: "Power to the Proletariat"
+political_authoritarian_socialism_desc: "The chains of capitalism will be broken—not by compromise, but by force. The working class must rise, and the state shall lead them. Through collective ownership, central planning, and revolutionary discipline, we forge a classless future. The party is the vanguard; the people, its strength. Dissent serves the bourgeoisie—unity is the weapon of the worker. Equality is not given. It is taken, secured, and protected by the iron will of the revolution."
+political_authoritarian_socialism_first: "Revolutionary Vanguard"
+political_authoritarian_socialism_first_desc: "History shows that masses can be misguided, corrupted, or betrayed. Only a disciplined vanguard can carry the revolution forward and crush opposition before it takes root."
+political_authoritarian_socialism_second: "Total Control of Production"
+political_authoritarian_socialism_second_desc: "The economy is too important to leave to chaos or private interests. The state must directly control production, distribution, and labor. There will be no room for greed, only service to the collective."
+political_authoritarian_socialism_third: "Iron Curtain of Surveillance"
+political_authoritarian_socialism_third_desc: "Enemies of the revolution lurk everywhere—within and without. Freedom without vigilance is suicide. We must weave a web of surveillance, intelligence, and loyalty to strangle counter-revolution in its crib."
+political_authoritarian_socialism_forth: "Red Totalitarianism"
+political_authoritarian_socialism_forth_desc: "The state is the people. The people are the state. We have fused ideology, party, and nation into a single, unbreakable organism. A perfect socialist society: disciplined, centralized, and eternal."
 
- political_libertarian_socialism: "Freedom Through Solidarity"
- political_libertarian_socialism_desc: "True freedom cannot exist under capitalism, nor under the boot of the state. Power must return to the people—not politicians, not corporations. In a liberated society, workers run the economy directly, through councils, cooperatives, and mutual aid. Hierarchies are dismantled, and communities govern themselves. Liberty is not a slogan—it is lived through collective action, shared responsibility, and resistance to all forms of domination. We reject both tyranny and greed. We build power from the ground up."
- political_libertarian_socialism_first: "Grassroots Revolution"
- political_libertarian_socialism_first_desc: "Power belongs not to politicians or tycoons, but to the people themselves. It is time to awaken the sleeping giant of worker and communal organization. We will plant the seeds of a bottom-up revolution."
- political_libertarian_socialism_second: "Syndicalist Networks"
- political_libertarian_socialism_second_desc: "Instead of corporations and bureaucracies, society will be run through syndicates—networks of workers who collectively own and manage their industries. Coordination, not domination. Cooperation, not coercion."
- political_libertarian_socialism_third: "Abolish the State"
- political_libertarian_socialism_third_desc: "Hierarchies of power cannot simply be reformed—they must be dismantled. Local communes and federations will replace centralized governance. Let mutual aid, not government decrees, be the lifeblood of society."
- political_libertarian_socialism_forth: "Libertarian Socialist Federation"
- political_libertarian_socialism_forth_desc: "We have achieved a new society: stateless, free, and collectively managed. No longer ruled by capital, no longer ruled by government—only by the bonds of solidarity and mutual respect. This is not anarchy. This is true democracy."
+political_libertarian_socialism: "Freedom Through Solidarity"
+political_libertarian_socialism_desc: "True freedom cannot exist under capitalism, nor under the boot of the state. Power must return to the people—not politicians, not corporations. In a liberated society, workers run the economy directly, through councils, cooperatives, and mutual aid. Hierarchies are dismantled, and communities govern themselves. Liberty is not a slogan—it is lived through collective action, shared responsibility, and resistance to all forms of domination. We reject both tyranny and greed. We build power from the ground up."
+political_libertarian_socialism_first: "Grassroots Revolution"
+political_libertarian_socialism_first_desc: "Power belongs not to politicians or tycoons, but to the people themselves. It is time to awaken the sleeping giant of worker and communal organization. We will plant the seeds of a bottom-up revolution."
+political_libertarian_socialism_second: "Syndicalist Networks"
+political_libertarian_socialism_second_desc: "Instead of corporations and bureaucracies, society will be run through syndicates—networks of workers who collectively own and manage their industries. Coordination, not domination. Cooperation, not coercion."
+political_libertarian_socialism_third: "Abolish the State"
+political_libertarian_socialism_third_desc: "Hierarchies of power cannot simply be reformed—they must be dismantled. Local communes and federations will replace centralized governance. Let mutual aid, not government decrees, be the lifeblood of society."
+political_libertarian_socialism_forth: "Libertarian Socialist Federation"
+political_libertarian_socialism_forth_desc: "We have achieved a new society: stateless, free, and collectively managed. No longer ruled by capital, no longer ruled by government—only by the bonds of solidarity and mutual respect. This is not anarchy. This is true democracy."
 
- political_democratic_socialism: "Justice by the People"
- political_democratic_socialism_desc: "The economy must serve the many—not the few. Through democratic means, we will reshape society into one that prioritizes dignity, equality, and shared prosperity. Healthcare, education, housing—these are not privileges, but rights. The markets will be regulated, the wealthy taxed, and corporations held accountable. Real power belongs in the hands of the people, not in boardrooms. Change doesn’t come from above—it’s built from below, through votes, voices, and solidarity."
- political_democratic_socialism_first: "A Mandate for Justice"
- political_democratic_socialism_first_desc: "The people are crying out for change—not chaos. We will take power not by storming the barricades, but by winning their trust. The ballot box will be our weapon, and the welfare of the working class our mission."
- political_democratic_socialism_second: "Red in the Ballot Box"
- political_democratic_socialism_second_desc: "It is not enough to be popular—we must be bold. Nationalize key industries, expand social services, and put the economy to work for the people. Capitalism must serve democracy, not the other way around."
- political_democratic_socialism_third: "Welfare State of the People"
- political_democratic_socialism_third_desc: "Healthcare, education, housing—these are not luxuries, they are rights. We will build a comprehensive safety net that guarantees dignity for all. A strong society is not built on wealth—but on well-being."
- political_democratic_socialism_forth: "Left Wing Populist Governance"
- political_democratic_socialism_forth_desc: "We are not reformers anymore. We are the system. The working class is no longer begging at the gates of power—they hold the keys. Our democratic mandate has been realized. A new model of governance, rooted in justice, solidarity, and economic fairness, is born."
-
-
- political_social_liberal: "Freedom and Progress"
- political_social_liberal_desc: "A thriving society is built on free markets, personal liberty, and equal opportunity. Social liberalism embraces the power of capitalism—but tempers it with regulation, civil rights, and global cooperation. Progress comes not from revolution, but innovation; not from control, but choice. The role of the state is to empower individuals, protect freedoms, and foster growth—without standing in the way. It is a balance between prosperity and fairness, tradition and change."
- political_social_liberal_first: "A Free and Fair Society"
- political_social_liberal_first_desc: "We reject the false choice between freedom and equality. A healthy society can—and must—have both. Let us protect civil liberties while ensuring that opportunity is not just a slogan, but a birthright."
- political_social_liberal_second: "Market with a Human Face"
- political_social_liberal_second_desc: "The market creates wealth—but left unchecked, it devours the vulnerable. We will not crush capitalism, but tame it. Through smart regulation and targeted redistribution, we will create a system that is both free and fair."
- political_social_liberal_third: "Globalist Renewal"
- political_social_liberal_third_desc: "Isolation breeds decay. We will embrace international trade, global cooperation, and multilateral institutions. Open societies must look outward—not just for profit, but for peace and shared progress."
- political_social_liberal_forth: "Neoliberal Mandate"
- political_social_liberal_forth_desc: "We have achieved the modern liberal dream: strong institutions, a free press, a robust market economy, and a progressive civic culture. This is not a utopia—it’s a blueprint for the future. The world watches us as a model for liberty and reform."
+political_democratic_socialism: "Justice by the People"
+political_democratic_socialism_desc: "The economy must serve the many—not the few. Through democratic means, we will reshape society into one that prioritizes dignity, equality, and shared prosperity. Healthcare, education, housing—these are not privileges, but rights. The markets will be regulated, the wealthy taxed, and corporations held accountable. Real power belongs in the hands of the people, not in boardrooms. Change doesn’t come from above—it’s built from below, through votes, voices, and solidarity."
+political_democratic_socialism_first: "A Mandate for Justice"
+political_democratic_socialism_first_desc: "The people are crying out for change—not chaos. We will take power not by storming the barricades, but by winning their trust. The ballot box will be our weapon, and the welfare of the working class our mission."
+political_democratic_socialism_second: "Red in the Ballot Box"
+political_democratic_socialism_second_desc: "It is not enough to be popular—we must be bold. Nationalize key industries, expand social services, and put the economy to work for the people. Capitalism must serve democracy, not the other way around."
+political_democratic_socialism_third: "Welfare State of the People"
+political_democratic_socialism_third_desc: "Healthcare, education, housing—these are not luxuries, they are rights. We will build a comprehensive safety net that guarantees dignity for all. A strong society is not built on wealth—but on well-being."
+political_democratic_socialism_forth: "Left Wing Populist Governance"
+political_democratic_socialism_forth_desc: "We are not reformers anymore. We are the system. The working class is no longer begging at the gates of power—they hold the keys. Our democratic mandate has been realized. A new model of governance, rooted in justice, solidarity, and economic fairness, is born."
 
 
-
- political_market_liberal: "Profit Is Freedom"
- political_market_liberal_desc: "The state is an obstacle—inefficient, coercive, and obsolete. True freedom lies in voluntary exchange and the sanctity of private property. In an anarcho-capitalist society, all functions of governance are privatized, decentralized, and subject to market competition. Justice, security, infrastructure—everything can be bought, sold, and improved through free enterprise. The invisible hand guides all. Regulation is theft. Taxation is slavery. Liberty means business."
- political_market_liberal_first: "Deregulate Everything"
- political_market_liberal_first_desc: "We are suffocating under red tape. Every policy, every law, every bureaucrat chips away at growth, freedom, and progress. It's time to unshackle the market and let innovation flourish. Efficiency doesn’t come from the state—it comes from competition. The first step is to rip away the barriers that block it."
- political_market_liberal_second: "Privatization Blitz"
- political_market_liberal_second_desc: "Government ownership is theft from the taxpayer and a cancer on productivity. State-run industries are bloated, wasteful, and corrupt. It's time to sell them off—to unleash private capital, competition, and profit. Every sale brings us closer to a leaner, freer economy. We are not reforming the state. We are hollowing it."
- political_market_liberal_third: "No God But the Market"
- political_market_liberal_third_desc: "Let the market judge all. The free market is not just an economic tool—it is the only fair arbiter of value, effort, and innovation. There is no place for ideology, only transaction. No place for central planning, only supply and demand. Let us abolish the last remnants of the welfare state and embrace pure liberty."
- political_market_liberal_forth: "Stateless Capitalism"
- political_market_liberal_forth_desc: "We have achieved the impossible: a state so limited, it is almost invisible. No more overreaching agencies, no more economic nannying. Contracts are sacred, taxes are obsolete, and capital flows without chains. The market is the new constitution. Let history remember us not as rulers—but as liberators of the economy."
-
- political_conservative: "Tradition and Stability"
- political_conservative_desc: "Change is not always progress. A strong society is rooted in time-tested values—faith, family, responsibility, and national identity. Conservatism defends the social order against chaos and preserves the institutions that bind us. It favors limited government, free enterprise, and personal accountability, while respecting the cultural heritage that defines who we are. Stability today ensures strength tomorrow."
- political_conservative_first: "Uphold the Constitution"
- political_conservative_first_desc: "While others tear down institutions for fleeting victories, we choose to defend them. The constitution is not perfect—but it endures. It is the cornerstone of our civilization, a contract between generations. We will restore respect for law, governance, and civility."
- political_conservative_second: "Family, Faith, and Freedom"
- political_conservative_second_desc: "The soul of the nation is not found in policy—it is found in the home, the church, the community. These are the roots from which society grows. In this age of identity crises and ideological extremism, we must return to the values that made us strong: family, faith, and freedom."
- political_conservative_third: "Responsible Governance"
- political_conservative_third_desc: "We do not govern for headlines or revolutions—we govern for the long road. Balanced budgets. Gradual reform. Stable policy. The populists can scream, the radicals can riot—we will build brick by brick, preserving what matters while adapting with care."
- political_conservative_forth: "The Conservative Mandate"
- political_conservative_forth_desc: "The people have chosen continuity. They want peace over upheaval, identity over ideology, and wisdom over noise. We will protect the republic, restore order, and carry forward the banner of tradition into a new era. The mandate is clear: preserve what works, protect what matters."
-
-
- political_authoritarian_democracy: "Order Through Tradition"
- political_authoritarian_democracy_desc: "Democracy must serve the nation—not weaken it. Freedom without discipline breeds decay. Under Authoritarian Democracy, elections exist, but they affirm a deeper truth: the strength of tradition, faith, and national identity. Cultural decay, moral relativism, and liberal excess are rejected. The state safeguards not just the people, but the soul of the nation. Authority is not a threat to freedom—it is its guardian."
- political_authoritarian_democracy_first: "Order Above All"
- political_authoritarian_democracy_first_desc: "In an age of instability, freedom without discipline is chaos. We must restore a firm hand to preserve the core of our nation. The people will accept less freedom, if it means more safety and tradition."
- political_authoritarian_democracy_second: "Guardians of Tradition"
- political_authoritarian_democracy_second_desc: "The foundations of our society—faith, family, and heritage—are under assault. We will defend them with policy, power, and pride. Our state shall become the protector of tradition, not a servant of fashionable ideologies."
- political_authoritarian_democracy_third: "Consolidated Leadership"
- political_authoritarian_democracy_third_desc: "True leadership requires decisiveness. We will adjust the democratic system to ensure continuity, reduce obstruction, and shield the nation from partisan sabotage. For the good of the country, our leader must endure."
- political_authoritarian_democracy_forth: "Controlled Democracy"
- political_authoritarian_democracy_forth_desc: "The illusion remains, but the power lies where it must. Our system has evolved into a strong, enduring democracy—guided firmly by patriotic rule. We have not abandoned democracy; we have perfected it."
-
- political_despotic: "Power Above All"
- political_despotic_desc: "Ideology is a tool. Loyalty is a weapon. In a despotic regime, the only truth is power—and those who wield it. The state does not serve the people; the people serve the state. Nationalism, socialism, religion—all are hollow banners used to tighten control. Dissent is crushed. Freedom is a threat. The ruler's word is law, and their will is absolute. There is no justice—only order. No morality—only survival."
- political_despotic_first: "Power Vacuum"
- political_despotic_first_desc: "The system is fractured. The old guard is weak. Only one truth remains: power must not be shared. We will begin the slow but deliberate dismantling of all opposition."
- political_despotic_second: "The Silent Purge"
- political_despotic_second_desc: "Opposition vanishes—quietly, methodically. The press grows quiet. Dissidents flee or fall. No one knows who to trust. The state sees all, and speaks only through the voice of the ruler."
- political_despotic_third: "Personal Rule"
- political_despotic_third_desc: "There are no more rivals. The party is hollowed, the courts obedient, the military loyal. The ruler is the state. This is not a government—it is a throne of control. Every decree, law, and life depends on one will."
- political_despotic_forth: "Absolute Autocracy"
- political_despotic_forth_desc: "The transformation is complete. The mask is off. There is no constitution, no election, no illusion. The state exists solely to preserve the ruler’s grip—and the system will burn before letting go."
+political_social_liberal: "Freedom and Progress"
+political_social_liberal_desc: "A thriving society is built on free markets, personal liberty, and equal opportunity. Social liberalism embraces the power of capitalism—but tempers it with regulation, civil rights, and global cooperation. Progress comes not from revolution, but innovation; not from control, but choice. The role of the state is to empower individuals, protect freedoms, and foster growth—without standing in the way. It is a balance between prosperity and fairness, tradition and change."
+political_social_liberal_first: "A Free and Fair Society"
+political_social_liberal_first_desc: "We reject the false choice between freedom and equality. A healthy society can—and must—have both. Let us protect civil liberties while ensuring that opportunity is not just a slogan, but a birthright."
+political_social_liberal_second: "Market with a Human Face"
+political_social_liberal_second_desc: "The market creates wealth—but left unchecked, it devours the vulnerable. We will not crush capitalism, but tame it. Through smart regulation and targeted redistribution, we will create a system that is both free and fair."
+political_social_liberal_third: "Globalist Renewal"
+political_social_liberal_third_desc: "Isolation breeds decay. We will embrace international trade, global cooperation, and multilateral institutions. Open societies must look outward—not just for profit, but for peace and shared progress."
+political_social_liberal_forth: "Neoliberal Mandate"
+political_social_liberal_forth_desc: "We have achieved the modern liberal dream: strong institutions, a free press, a robust market economy, and a progressive civic culture. This is not a utopia—it’s a blueprint for the future. The world watches us as a model for liberty and reform."
 
 
 
- political_fascism: "Strength Through Unity"
- political_fascism_desc: "The nation is eternal. Its will is sacred. Fascism rejects weakness, decadence, and division, forging instead a society built on discipline, hierarchy, and absolute loyalty. The individual is nothing—the collective is everything. Through force, tradition, and relentless nationalism, the state becomes unstoppable. War is cleansing. Struggle is noble. Those who oppose the nation are enemies to be purged. There is no debate, no doubt—only strength, unity, and the unshakable will of the leader."
- political_fascism_first: "March of Discipline"
- political_fascism_first_desc: "Chaos and complacency have weakened the nation. Our people are tired of bickering politicians and moral decay. The time has come to restore strength, discipline, and purpose. We will begin a campaign to awaken national pride and reforge the state's foundations with steel and order."
- political_fascism_second: "One Nation, One Will"
- political_fascism_second_desc: "There can be no unity with division. The old factions, with their petty ideologies and self-interest, must be silenced. A true nation must speak with one voice and march under one banner. We will begin the necessary purges—political, media, and institutional—to eliminate internal enemies."
- political_fascism_third: "The New Order"
- political_fascism_third_desc: "Our society will be reshaped according to eternal truths: hierarchy, duty, and loyalty. The people will be taught to serve the state. The economy will follow the needs of the nation. This is not just reform—it is revolution through authority. A new doctrine of state power is rising."
- political_fascism_forth: "Fascist State Established"
- political_fascism_forth_desc: "We have completed our transformation. The party leads. The people obey. The nation is reborn. No longer shackled by weakness, we stand ready to march into history as a united force. The fascist state is here—and it shall never fall again."
+political_market_liberal: "Profit Is Freedom"
+political_market_liberal_desc: "The state is an obstacle—inefficient, coercive, and obsolete. True freedom lies in voluntary exchange and the sanctity of private property. In an anarcho-capitalist society, all functions of governance are privatized, decentralized, and subject to market competition. Justice, security, infrastructure—everything can be bought, sold, and improved through free enterprise. The invisible hand guides all. Regulation is theft. Taxation is slavery. Liberty means business."
+political_market_liberal_first: "Deregulate Everything"
+political_market_liberal_first_desc: "We are suffocating under red tape. Every policy, every law, every bureaucrat chips away at growth, freedom, and progress. It's time to unshackle the market and let innovation flourish. Efficiency doesn’t come from the state—it comes from competition. The first step is to rip away the barriers that block it."
+political_market_liberal_second: "Privatization Blitz"
+political_market_liberal_second_desc: "Government ownership is theft from the taxpayer and a cancer on productivity. State-run industries are bloated, wasteful, and corrupt. It's time to sell them off—to unleash private capital, competition, and profit. Every sale brings us closer to a leaner, freer economy. We are not reforming the state. We are hollowing it."
+political_market_liberal_third: "No God But the Market"
+political_market_liberal_third_desc: "Let the market judge all. The free market is not just an economic tool—it is the only fair arbiter of value, effort, and innovation. There is no place for ideology, only transaction. No place for central planning, only supply and demand. Let us abolish the last remnants of the welfare state and embrace pure liberty."
+political_market_liberal_forth: "Stateless Capitalism"
+political_market_liberal_forth_desc: "We have achieved the impossible: a state so limited, it is almost invisible. No more overreaching agencies, no more economic nannying. Contracts are sacred, taxes are obsolete, and capital flows without chains. The market is the new constitution. Let history remember us not as rulers—but as liberators of the economy."
+
+political_conservative: "Tradition and Stability"
+political_conservative_desc: "Change is not always progress. A strong society is rooted in time-tested values—faith, family, responsibility, and national identity. Conservatism defends the social order against chaos and preserves the institutions that bind us. It favors limited government, free enterprise, and personal accountability, while respecting the cultural heritage that defines who we are. Stability today ensures strength tomorrow."
+political_conservative_first: "Uphold the Constitution"
+political_conservative_first_desc: "While others tear down institutions for fleeting victories, we choose to defend them. The constitution is not perfect—but it endures. It is the cornerstone of our civilization, a contract between generations. We will restore respect for law, governance, and civility."
+political_conservative_second: "Family, Faith, and Freedom"
+political_conservative_second_desc: "The soul of the nation is not found in policy—it is found in the home, the church, the community. These are the roots from which society grows. In this age of identity crises and ideological extremism, we must return to the values that made us strong: family, faith, and freedom."
+political_conservative_third: "Responsible Governance"
+political_conservative_third_desc: "We do not govern for headlines or revolutions—we govern for the long road. Balanced budgets. Gradual reform. Stable policy. The populists can scream, the radicals can riot—we will build brick by brick, preserving what matters while adapting with care."
+political_conservative_forth: "The Conservative Mandate"
+political_conservative_forth_desc: "The people have chosen continuity. They want peace over upheaval, identity over ideology, and wisdom over noise. We will protect the republic, restore order, and carry forward the banner of tradition into a new era. The mandate is clear: preserve what works, protect what matters."
 
 
- political_national_socialism: "The Eternal Awakening"
- political_national_socialism_desc: "This is more than ideology—it is prophecy. Esoteric Nazism views the nation as a sacred bloodline, chosen by fate, corrupted by modernity, and destined to rise through struggle. The world must be purified, history rewritten, and the ancient order restored. Through ritual, race, and will, the true people shall awaken to their divine purpose. The weak will perish. The impure will burn. Only the faithful shall inherit the future. This is not politics—it is transcendence through power."
- political_national_socialism_first: "Shadows of the Past"
- political_national_socialism_first_desc: "The failures of the present are echoes of a forgotten truth. Beneath the lies of history lies a deeper order—one of blood, heritage, and destiny. The people hunger for meaning, for identity. We will fan the embers of the old flame, whispering of glory lost and vengeance to come."
- political_national_socialism_second: "Blood and Destiny"
- political_national_socialism_second_desc: "We are not like the others. We are chosen—by blood, by spirit, by fate. Our society must be cleansed of the corrupt and the foreign, and rebuilt around those worthy to inherit it. Through ritual and righteousness, we begin the purification of the nation’s soul."
- political_national_socialism_third: "Doctrine of Purity"
- political_national_socialism_third_desc: "Strength is not enough—we must believe. Our doctrine fuses myth, history, and power into a single vision. The people will not just obey—they will follow with fanatical devotion. We will shape education, media, and military values to reflect our divine mission."
- political_national_socialism_forth: "Ascension of the True Order"
- political_national_socialism_forth_desc: "We are reborn. No longer hiding in the shadows, the true order now rules in the open. The weak will be purged, the heretics silenced, and the traitors exiled. Our sacred mission has begun: to forge a new world in our image. We will rise—not as a state, but as a chosen people."
+political_authoritarian_democracy: "Order Through Tradition"
+political_authoritarian_democracy_desc: "Democracy must serve the nation—not weaken it. Freedom without discipline breeds decay. Under Authoritarian Democracy, elections exist, but they affirm a deeper truth: the strength of tradition, faith, and national identity. Cultural decay, moral relativism, and liberal excess are rejected. The state safeguards not just the people, but the soul of the nation. Authority is not a threat to freedom—it is its guardian."
+political_authoritarian_democracy_first: "Order Above All"
+political_authoritarian_democracy_first_desc: "In an age of instability, freedom without discipline is chaos. We must restore a firm hand to preserve the core of our nation. The people will accept less freedom, if it means more safety and tradition."
+political_authoritarian_democracy_second: "Guardians of Tradition"
+political_authoritarian_democracy_second_desc: "The foundations of our society—faith, family, and heritage—are under assault. We will defend them with policy, power, and pride. Our state shall become the protector of tradition, not a servant of fashionable ideologies."
+political_authoritarian_democracy_third: "Consolidated Leadership"
+political_authoritarian_democracy_third_desc: "True leadership requires decisiveness. We will adjust the democratic system to ensure continuity, reduce obstruction, and shield the nation from partisan sabotage. For the good of the country, our leader must endure."
+political_authoritarian_democracy_forth: "Controlled Democracy"
+political_authoritarian_democracy_forth_desc: "The illusion remains, but the power lies where it must. Our system has evolved into a strong, enduring democracy—guided firmly by patriotic rule. We have not abandoned democracy; we have perfected it."
+
+political_despotic: "Power Above All"
+political_despotic_desc: "Ideology is a tool. Loyalty is a weapon. In a despotic regime, the only truth is power—and those who wield it. The state does not serve the people; the people serve the state. Nationalism, socialism, religion—all are hollow banners used to tighten control. Dissent is crushed. Freedom is a threat. The ruler's word is law, and their will is absolute. There is no justice—only order. No morality—only survival."
+political_despotic_first: "Power Vacuum"
+political_despotic_first_desc: "The system is fractured. The old guard is weak. Only one truth remains: power must not be shared. We will begin the slow but deliberate dismantling of all opposition."
+political_despotic_second: "The Silent Purge"
+political_despotic_second_desc: "Opposition vanishes—quietly, methodically. The press grows quiet. Dissidents flee or fall. No one knows who to trust. The state sees all, and speaks only through the voice of the ruler."
+political_despotic_third: "Personal Rule"
+political_despotic_third_desc: "There are no more rivals. The party is hollowed, the courts obedient, the military loyal. The ruler is the state. This is not a government—it is a throne of control. Every decree, law, and life depends on one will."
+political_despotic_forth: "Absolute Autocracy"
+political_despotic_forth_desc: "The transformation is complete. The mask is off. There is no constitution, no election, no illusion. The state exists solely to preserve the ruler’s grip—and the system will burn before letting go."
+
+
+
+political_fascism: "Strength Through Unity"
+political_fascism_desc: "The nation is eternal. Its will is sacred. Fascism rejects weakness, decadence, and division, forging instead a society built on discipline, hierarchy, and absolute loyalty. The individual is nothing—the collective is everything. Through force, tradition, and relentless nationalism, the state becomes unstoppable. War is cleansing. Struggle is noble. Those who oppose the nation are enemies to be purged. There is no debate, no doubt—only strength, unity, and the unshakable will of the leader."
+political_fascism_first: "March of Discipline"
+political_fascism_first_desc: "Chaos and complacency have weakened the nation. Our people are tired of bickering politicians and moral decay. The time has come to restore strength, discipline, and purpose. We will begin a campaign to awaken national pride and reforge the state's foundations with steel and order."
+political_fascism_second: "One Nation, One Will"
+political_fascism_second_desc: "There can be no unity with division. The old factions, with their petty ideologies and self-interest, must be silenced. A true nation must speak with one voice and march under one banner. We will begin the necessary purges—political, media, and institutional—to eliminate internal enemies."
+political_fascism_third: "The New Order"
+political_fascism_third_desc: "Our society will be reshaped according to eternal truths: hierarchy, duty, and loyalty. The people will be taught to serve the state. The economy will follow the needs of the nation. This is not just reform—it is revolution through authority. A new doctrine of state power is rising."
+political_fascism_forth: "Fascist State Established"
+political_fascism_forth_desc: "We have completed our transformation. The party leads. The people obey. The nation is reborn. No longer shackled by weakness, we stand ready to march into history as a united force. The fascist state is here—and it shall never fall again."
+
+
+political_national_socialism: "The Eternal Awakening"
+political_national_socialism_desc: "This is more than ideology—it is prophecy. Esoteric Nazism views the nation as a sacred bloodline, chosen by fate, corrupted by modernity, and destined to rise through struggle. The world must be purified, history rewritten, and the ancient order restored. Through ritual, race, and will, the true people shall awaken to their divine purpose. The weak will perish. The impure will burn. Only the faithful shall inherit the future. This is not politics—it is transcendence through power."
+political_national_socialism_first: "Shadows of the Past"
+political_national_socialism_first_desc: "The failures of the present are echoes of a forgotten truth. Beneath the lies of history lies a deeper order—one of blood, heritage, and destiny. The people hunger for meaning, for identity. We will fan the embers of the old flame, whispering of glory lost and vengeance to come."
+political_national_socialism_second: "Blood and Destiny"
+political_national_socialism_second_desc: "We are not like the others. We are chosen—by blood, by spirit, by fate. Our society must be cleansed of the corrupt and the foreign, and rebuilt around those worthy to inherit it. Through ritual and righteousness, we begin the purification of the nation’s soul."
+political_national_socialism_third: "Doctrine of Purity"
+political_national_socialism_third_desc: "Strength is not enough—we must believe. Our doctrine fuses myth, history, and power into a single vision. The people will not just obey—they will follow with fanatical devotion. We will shape education, media, and military values to reflect our divine mission."
+political_national_socialism_forth: "Ascension of the True Order"
+political_national_socialism_forth_desc: "We are reborn. No longer hiding in the shadows, the true order now rules in the open. The weak will be purged, the heretics silenced, and the traitors exiled. Our sacred mission has begun: to forge a new world in our image. We will rise—not as a state, but as a chosen people."
+
+
+
+
+energy_idea_1: "Energy Expansion"
+energy_idea_1_desc: "The nation has vast untapped potential when it comes to energy production. By investing heavily in infrastructure, research, and modern technology, we can lay the foundation for a comprehensive energy strategy. This will increase energy availability across the nation, provide a solid base for future economic growth, and ensure that we will no longer have to rely on unstable foreign sources of energy. The time to initiate a massive energy expansion is now."
+
+energy_idea_2: "Infrastructure Development"
+energy_idea_2_desc: "For any expansion to be successful, we must first build the infrastructure that will support it. This focus will prioritize the development of energy plants, transportation grids, and storage facilities that are vital to meet future demands. By investing in critical infrastructure, we will not only increase our energy production capacity but also stimulate local economies and provide jobs to our citizens. This is the backbone of our future energy system and a step towards modernization."
+
+energy_idea_3: "Synthetic Oil Innovation"
+energy_idea_3_desc: "With global energy markets growing increasingly unstable, we cannot afford to rely solely on foreign oil. It is time to take matters into our own hands by investing in synthetic oil production technologies. This breakthrough will allow us to produce high-quality oil from domestic resources, ensuring that our energy needs are met from within. Not only will this reduce our dependency on foreign suppliers, but it will also make our economy more resilient to global energy crises and give us an edge in the global market."
+
+energy_idea_4: "Coal Industry Strengthening"
+energy_idea_4_desc: "While many nations are rushing towards new technologies like nuclear and renewable energy, we cannot afford to forget the role of traditional coal in our energy infrastructure. The coal industry has been the cornerstone of our energy production for decades, and strengthening this industry will provide us with the steady, reliable power we need to fuel our economy. This focus will enhance coal extraction, improve the efficiency of coal plants, and ensure that our energy demands are met even as we transition towards other forms of energy."
+
+energy_idea_5: "Nuclear Energy Focus"
+energy_idea_5_desc: "The world is beginning to recognize the potential of nuclear energy as a clean, efficient, and sustainable power source. By shifting towards nuclear energy, we can significantly reduce our reliance on fossil fuels and make our energy grid both more secure and environmentally friendly. This focus will invest in nuclear research and development, ensuring that we are at the forefront of this new energy frontier. The move to nuclear energy represents a bold step into the future, one that will pay off for generations to come."
+
+energy_idea_6: "Green Energy Transition"
+energy_idea_6_desc: "As the world grows increasingly aware of the environmental toll that traditional energy sources take on the planet, it is time to lead the way towards a greener, more sustainable future. This focus will prioritize the development of renewable energy sources, including solar, wind, and hydroelectric power. By investing in these technologies, we will not only help mitigate climate change but also position ourselves as a leader in the emerging green economy. Transitioning to green energy will ensure a cleaner, more sustainable future for our nation and the world, while also creating new industries and job opportunities."
+
+
+industrial_idea: "Modernize the Economy"
+industrial_idea_desc: "A large-scale effort to modernize the economy and build a foundation for industrial growth. By focusing on the latest technologies and production techniques, we can lay the groundwork for a thriving, self-sustaining economy. This will improve our infrastructure and production capabilities, allowing us to compete in the global market."
+
+industrial_idea_1: "Industrial Modernization"
+industrial_idea_1_desc: "With a strong foundation in place, it's time to begin the actual process of industrial modernization. We will focus on upgrading factories, expanding production capabilities, and improving labor efficiency. This will allow us to transition into a more advanced industrial power, capable of meeting the challenges of the modern world."
+
+industrial_idea_2: "Expand Office Infrastructure"
+industrial_idea_2_desc: "In order to support the growing economy, we must expand our office and administrative infrastructure. By providing more space for management and overseeing operations, we will create a smoother, more efficient economic system. This expansion is essential for maintaining control over our increasing industrial output."
+
+industrial_idea_3: "Economic Office Expansion"
+industrial_idea_3_desc: "The next step is to expand the infrastructure of our economic offices. This will streamline our administrative capabilities and enable more effective resource management. With a stronger foundation in place, we will be able to execute our industrial strategy more effectively and maintain long-term stability."
+
+industrial_idea_4: "Expand Industrial Capacity"
+industrial_idea_4_desc: "With the administrative and office structures in place, it's time to shift our focus to expanding our industrial capacity. By constructing new factories, refining technologies, and increasing production, we can push our economy to new heights and become a global industrial powerhouse."
+
+industrial_idea_5: "Resource Expansion"
+industrial_idea_5_desc: "In order to fuel the growing industrial machine, we must increase our access to essential resources. This focus aims to secure new sources of raw materials and establish a reliable supply chain to feed our factories. The more resources we have, the faster and more efficiently we can expand our industrial base."
+
+industrial_idea_6: "Continued Resource Expansion"
+industrial_idea_6_desc: "The demand for resources continues to grow as our industries expand. This focus will ensure that we secure additional sources of essential raw materials and solidify our supply chains. By expanding our resource base, we ensure that our industrial efforts are sustainable and capable of supporting our growth."
+
+industrial_idea_7: "Military Industrial Expansion"
+industrial_idea_7_desc: "A powerful military requires a powerful industrial base. By prioritizing the military aspect of our industrial expansion, we can ensure that our armed forces are adequately supplied with the tools they need. This focus will increase our ability to produce military equipment, weapons, and infrastructure, ensuring our readiness for any conflict."
+
+industrial_idea_8: "Further Military Industrial Expansion"
+industrial_idea_8_desc: "As our military demands grow, so must our industrial capabilities. This next step in the military industrial expansion focuses on further increasing production capacity for military goods. By investing in more advanced military technologies and increasing efficiency, we will secure the resources necessary to sustain our military power."
+
+
+
+militar_start: "Military Foundations"
+militar_start_desc: "Establishing a strong and unified military command is the first step toward safeguarding our nation's future. With clear leadership and renewed purpose, we will begin the long process of modernizing and preparing our armed forces for the challenges ahead."
+
+army_start: "Army Reform Initiative"
+army_start_desc: "The world is evolving, and so must our armed forces. We are launching a comprehensive review and overhaul of our military doctrines, equipment, and organizational structures. This reform initiative will prepare our army to meet future challenges with flexibility, strength, and modernized tactics."
+
+army_idea_1: "Doctrine Reevaluation"
+army_idea_1_desc: "Decades-old strategies can no longer guarantee victory. Through careful study and field testing, we will identify outdated practices and replace them with modern doctrines emphasizing speed, firepower, and adaptability. This process marks the first critical step in building a truly modern army."
+
+army_idea_2: "Equipment Standardization"
+army_idea_2_desc: "An army burdened with incompatible equipment cannot perform at its peak. By enforcing standardized weapons, vehicles, and support systems across all divisions, we will streamline logistics, improve battlefield efficiency, and ensure that our forces can operate as a cohesive and flexible machine."
+
+army_idea_3: "Professionalization Drive"
+army_idea_3_desc: "Victory belongs to the trained and the disciplined. We will transform our forces from a collection of conscripts into a professional army staffed by career soldiers and elite volunteers. Higher training standards, better leadership development, and meritocratic promotions will elevate our military to new heights."
+
+army_idea_4: "Modern Combat Tactics"
+army_idea_4_desc: "Warfare today demands speed, precision, and coordination. Our commanders are being retrained in combined arms operations, urban warfare, and rapid maneuver tactics. By mastering these doctrines, we will ensure that our forces maintain the initiative on any battlefield, against any foe."
+
+army_idea_5: "Infantry-Centric Doctrine"
+army_idea_5_desc: "Even in the age of machines, the infantryman remains the backbone of any army. We will prioritize the development of specialized infantry units, equipped with advanced weaponry, supported by precision artillery and rapid response logistics. Superior tactics, resilience, and flexibility will make our infantry divisions unstoppable."
+
+army_idea_6: "Mechanized Warfare Doctrine"
+army_idea_6_desc: "The future of battle belongs to speed and protection. Our forces will center around fast-moving infantry fighting vehicles (IFVs) and mechanized battalions, capable of delivering troops directly into the heart of combat. By embracing mechanization, we will achieve unprecedented operational reach and battlefield dominance."
+
+army_idea_7: "Armored Dominance Doctrine"
+army_idea_7_desc: "The thunder of steel will herald our victories. Our new doctrine emphasizes heavily armored spearheads, using tanks and armored support vehicles to shatter enemy lines with overwhelming firepower. Through relentless offensive operations, our armored divisions will dictate the course of battle and crush any who stand against us."
+ 
+navy_start: "####IN PROCESS####Naval Reorganization"
+navy_start_desc: "Our navy must be reformed from the keel up. To defend our shores, secure our trade routes, and project power abroad, we must build a modern and professional naval force."
+
+navy_idea_1: "Fleet Modernization"
+navy_idea_1_desc: "A strong navy begins with strong ships. We will replace outdated vessels, upgrade existing fleets, and invest in cutting-edge naval technologies."
+
+navy_idea_2: "Naval Command Reforms"
+navy_idea_2_desc: "A powerful fleet is worthless without skilled leadership. New doctrines and a restructured chain of command will sharpen our operational effectiveness at sea."
+
+navy_idea_3: "Integrated Naval Strategy"
+navy_idea_3_desc: "By synchronizing our shipbuilding, command structures, and strategic doctrines, we can create a unified naval force capable of dominating any theater."
+
+navy_idea_4: "Expansion of the Navy"
+navy_idea_4_desc: "With a solid foundation, it is time to expand our fleet size, extend our global reach, and prepare for potential maritime conflicts."
+
+navy_idea_5: "Carrier Strike Focus"
+navy_idea_5_desc: "Air power will dominate the future of naval warfare. We must prioritize the construction and deployment of aircraft carriers to establish supremacy across the seas."
+
+navy_idea_6: "Battleship Superiority Doctrine"
+navy_idea_6_desc: "Raw firepower still has a place in modern conflict. By investing in battleship production and heavy surface fleets, we can crush enemy navies with overwhelming force."
+ 
+air_start: "####IN PROCESS####Air Force Reorganization"
+air_start_desc: "Our air force must be restructured to meet the challenges of modern warfare. Superior air power is crucial to national defense, ground support, and strategic dominance."
+
+air_idea_1: "Air Doctrine Reform"
+air_idea_1_desc: "New realities of warfare demand updated aerial doctrines. We will rethink our approach to air superiority, ground attack, and strategic bombing operations."
+
+air_idea_2: "Aircraft Modernization Program"
+air_idea_2_desc: "Outdated aircraft models will be phased out. New investments will ensure that our air wings are equipped with the fastest, most lethal machines available."
+
+air_idea_3: "Unified Air Command"
+air_idea_3_desc: "Effective coordination is key to success in the skies. We will centralize command structures and establish a streamlined chain of command for all air operations."
+
+air_idea_4: "Expansion of the Air Force"
+air_idea_4_desc: "Having laid the foundations, we can now expand our air fleets, establish new airbases, and ensure air supremacy in every theater of operation."
+
+air_idea_5: "Fighter Supremacy Doctrine"
+air_idea_5_desc: "Victory will belong to those who dominate the skies. We will prioritize the production of cutting-edge fighter jets to seize and maintain air superiority."
+
+air_idea_6: "Strategic Bombing Focus"
+air_idea_6_desc: "Rather than simply engaging enemy aircraft, we will strike directly at enemy infrastructure, industry, and morale through massive, coordinated bombing campaigns."
+
+
+
 
 
 

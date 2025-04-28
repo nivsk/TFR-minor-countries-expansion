@@ -1,0 +1,41 @@
+l_english:
+
+
+# Category Titles
+simple_category: "Covert Coup Operations"
+simple_category_desc: "In the shadows, we are preparing to destabilize the current regime through subterfuge, support of opposition movements, and political manipulation."
+
+popular_uprising_preparations: "Popular Uprising Preparations"
+popular_uprising_preparations_desc: "We are quietly sowing the seeds of rebellion among the people. Through targeted propaganda and clandestine support, we aim to ignite a popular revolution against the government."
+
+# Decisions for covert_coup_operations
+support_opposition_leaders: "Support Opposition Leaders"
+support_opposition_leaders_desc: "Provide clandestine support to opposition leaders who seek to overthrow the government. Their success will be our triumph."
+
+fund_underground_media: "Fund Underground Media"
+fund_underground_media_desc: "Financing underground newspapers, radio stations, and social media networks to spread anti-government sentiment and weaken the regime's legitimacy."
+
+recruit_dissidents: "Recruit Dissidents"
+recruit_dissidents_desc: "Target disenfranchised military officers, bureaucrats, and influential civilians willing to betray the regime in favor of our cause."
+
+arm_the_resistance: "Arm the Resistance"
+arm_the_resistance_desc: "Smuggle weapons and supplies to the underground resistance movements, preparing them for open rebellion when the time comes."
+
+sabotage_government_institutions: "Sabotage Government Institutions"
+sabotage_government_institutions_desc: "Encourage acts of sabotage against critical government infrastructure, undermining the regime's authority and sowing chaos."
+
+# Decisions for popular_uprising_preparations
+spread_revolutionary_propaganda: "Spread Revolutionary Propaganda"
+spread_revolutionary_propaganda_desc: "Disseminate propaganda calling for revolution among the populace, encouraging mass civil disobedience and unrest."
+
+establish_secret_cells: "Establish Secret Cells"
+establish_secret_cells_desc: "Create secret revolutionary cells throughout the country, ready to act when the time for uprising arrives."
+
+inflitrate_security_forces: "Infiltrate Security Forces"
+inflitrate_security_forces_desc: "Place loyal agents within the regime’s police and military to sabotage operations and gather critical intelligence."
+
+organize_worker_strikes: "Organize Worker Strikes"
+organize_worker_strikes_desc: "Mobilize workers to stage mass strikes that disrupt the economy and strain the government's ability to maintain control."
+
+ignite_student_protests: "Ignite Student Protests"
+ignite_student_protests_desc: "Fuel student activism to create widespread protests in urban centers, further destabilizing the political environment."

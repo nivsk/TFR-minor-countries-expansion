@@ -54,12 +54,6 @@ spriteTypes = {
 }
 spriteTypes = {
 		SpriteType = {
-		name = "GFX_prepare_the_nation"
-		texturefile = "gfx/interface/goals/GFX_prepare_the_nation.dds"
-	}
-}
-spriteTypes = {
-		SpriteType = {
 		name = "GFX_the_totalitarian_society"
 		texturefile = "gfx/interface/goals/GFX_the_totalitarian_society.dds"
 	}
@@ -380,5 +374,192 @@ spriteTypes = {
 		SpriteType = {
 		name = "GER_defenders_of_democracy"
 		texturefile = "gfx/interface/goals/GER_defenders_of_democracy.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "FRA_Integrate_Military_Oil_Budget"
+		texturefile = "gfx/interface/goals/FRA_Integrate_Military_Oil_Budget.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GER_Increase_Oil_Reserves"
+		texturefile = "gfx/interface/goals/GER_Increase_Oil_Reserves.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "JAP_save_our_democracy"
+		texturefile = "gfx/interface/goals/JAP_save_our_democracy.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "PRC_green_energy_green_vehicles_plan"
+		texturefile = "gfx/interface/goals/PRC_green_energy_green_vehicles_plan.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "PRC_towards_a_digital_communism"
+		texturefile = "gfx/interface/goals/PRC_towards_a_digital_communism.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "PRC_socialist_modernization"
+		texturefile = "gfx/interface/goals/PRC_socialist_modernization.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "PRC_upgrade_energy_grid"
+		texturefile = "gfx/interface/goals/PRC_upgrade_energy_grid.dds"
+	}
+}
+ 
+spriteTypes = {
+		SpriteType = {
+		name = "SOV_social_populism"
+		texturefile = "gfx/interface/goals/SOV_social_populism.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "USA_no_justice_no_peace"
+		texturefile = "gfx/interface/goals/USA_no_justice_no_peace.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "USB_nationalize_critical_infrastructure"
+		texturefile = "gfx/interface/goals/USB_nationalize_critical_infrastructure.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "PRC_improve_officer_training"
+		texturefile = "gfx/interface/goals/PRC_improve_officer_training.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "PRC_next_generation_army"
+		texturefile = "gfx/interface/goals/PRC_next_generation_army.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "JAP_energy_independence_3"
+		texturefile = "gfx/interface/goals/JAP_energy_independence_3.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GER_revive_the_german_coal_industry"
+		texturefile = "gfx/interface/goals/GER_revive_the_german_coal_industry.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "USC_harness_the_military_industrial_complex"
+		texturefile = "gfx/interface/goals/USC_harness_the_military_industrial_complex.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "GER_utilize_europes_industrial_capacity"
+		texturefile = "gfx/interface/goals/GER_utilize_europes_industrial_capacity.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "SOV_finance_industrial_sector"
+		texturefile = "gfx/interface/goals/SOV_finance_industrial_sector.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "SOV_fund_industrial_rejuvination"
+		texturefile = "gfx/interface/goals/SOV_fund_industrial_rejuvination.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "SOV_introduce_industrial_automization"
+		texturefile = "gfx/interface/goals/SOV_introduce_industrial_automization.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "SOV_upgrade_industrial_production"
+		texturefile = "gfx/interface/goals/SOV_upgrade_industrial_production.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "PRC_encourage_industrial_modernization"
+		texturefile = "gfx/interface/goals/PRC_encourage_industrial_modernization.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "FRA_supplement_quebecois_industry"
+		texturefile = "gfx/interface/goals/FRA_supplement_quebecois_industry.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "SOV_reevaluate_army_formations"
+		texturefile = "gfx/interface/goals/SOV_reevaluate_army_formations.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "USC_an_adaptable_army"
+		texturefile = "gfx/interface/goals/USC_an_adaptable_army.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "FRA_The_New_French_Army"
+		texturefile = "gfx/interface/goals/FRA_The_New_French_Army.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "FPR_Professionalize_the_Army"
+		texturefile = "gfx/interface/goals/FPR_Professionalize_the_Army.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "FRA_French_Army_of_Old"
+		texturefile = "gfx/interface/goals/FRA_French_Army_of_Old.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "FRA_further_mechanization_technology"
+		texturefile = "gfx/interface/goals/FRA_further_mechanization_technology.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "SOV_innovations_in_the_army"
+		texturefile = "gfx/interface/goals/SOV_innovations_in_the_army.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "PTF_Combined_Arms_Tactics"
+		texturefile = "gfx/interface/goals/PTF_Combined_Arms_Tactics.dds"
+	}
+}
+spriteTypes = {
+		SpriteType = {
+		name = "PTF_Combined_Arms_Tactics"
+		texturefile = "gfx/interface/goals/PTF_Combined_Arms_Tactics.dds"
 	}
 }
