@@ -1,0 +1,5994 @@
+search_filter_prios = {
+	FOCUS_FILTER_POLITICAL = 1010
+	
+	FOCUS_FILTER_RESEARCH = 522
+	
+	FOCUS_FILTER_INDUSTRY = 509
+
+	FOCUS_FILTER_BALANCE_OF_POWER = 200
+	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
+	FOCUS_FILTER_PROPAGANDA = 110
+	FOCUS_FILTER_MISSIOLINI = 110
+	FOCUS_FILTER_ARMY_XP = 103
+	FOCUS_FILTER_NAVY_XP = 102
+	FOCUS_FILTER_AIR_XP = 101
+
+}
+
+focus_tree = {
+	id = generic_focus
+	
+	country = {
+		factor = 1
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+
+	initial_show_position = {
+		focus = political_start
+	}
+ #Combined Military
+	focus = {
+		id = militar_start
+		icon = PTF_Combined_Arms_Tactics
+		x = 0
+		y = 0
+		cost = 1
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.11
+
+		}
+	}
+  #Army
+	focus = {
+		id = army_start
+		icon = GFX_refine_airland_combat
+		x = -5
+		y = 1
+		cost = 1
+
+		prerequisite = { focus = militar_start}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_ideas = army_ideas_1
+			army_experience = 20
+			country_event = generic_event.12			
+
+		}
+	}
+	focus = {
+		id = army_idea_1
+		icon = FRA_further_mechanization_technology
+		x = -4
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = army_start}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			army_experience = 20
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			if = {
+				limit = { has_idea = army_ideas_1}
+				swap_ideas = {
+					remove_idea = army_ideas_1
+					add_idea = army_ideas_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = army_ideas_2}
+				swap_ideas = {
+					remove_idea = army_ideas_2
+					add_idea = army_ideas_3
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = army_idea_2
+		icon = FRA_French_Army_of_Old
+		x = -6
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = army_start}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = army_ideas_1}
+				swap_ideas = {
+					remove_idea = army_ideas_1
+					add_idea = army_ideas_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = army_ideas_2}
+				swap_ideas = {
+					remove_idea = army_ideas_2
+					add_idea = army_ideas_3
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = army_idea_3
+		icon = PRC_next_generation_army
+		x = -5
+		y = 3
+		cost = 15
+
+		prerequisite = { focus = army_idea_2}
+		prerequisite = { focus = army_idea_1}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = army_ideas_3}
+				swap_ideas = {
+					remove_idea = army_ideas_3
+					add_idea = army_ideas_4
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = army_idea_4
+		icon = SOV_innovations_in_the_army
+		x = -5
+		y = 4
+		cost = 15
+
+		prerequisite = { focus = army_idea_3 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.15
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = radar_tech
+			}
+			if = {
+				limit = { has_idea = army_ideas_4}
+				swap_ideas = {
+					remove_idea = army_ideas_4
+					add_idea = army_ideas_5
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = army_idea_5
+		icon = USC_an_adaptable_army
+		x = -4
+		y = 5
+		cost = 20
+
+		available = {
+			Or { 
+				has_idea = high_military
+				has_idea = higher_military
+				has_idea = highest_military
+			}	
+		}
+
+		prerequisite = { focus = army_idea_4 }
+		mutually_exclusive = {focus = army_idea_7 focus = army_idea_6}
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.18
+			if = {
+				limit = { has_idea = army_ideas_5}
+				swap_ideas = {
+					remove_idea = army_ideas_5
+					add_idea = army_ideas_6
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = army_idea_6
+		icon = FPR_Professionalize_the_Army
+		x = -6
+		y = 5
+		cost = 20
+
+		available = {
+			Or { 
+				has_idea = high_military
+				has_idea = higher_military
+				has_idea = highest_military
+			}	
+		}
+
+		prerequisite = { focus = army_idea_4 }
+		mutually_exclusive = {focus = army_idea_5 focus = army_idea_7}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.16
+			if = {
+				limit = { has_idea = army_ideas_5}
+				swap_ideas = {
+					remove_idea = army_ideas_5
+					add_idea = army_ideas_7
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = army_idea_7
+		icon = FRA_The_New_French_Army
+		x = -5
+		y = 6
+		cost = 20
+
+		available = {
+			Or { 
+				has_idea = high_military
+				has_idea = higher_military
+				has_idea = highest_military
+			}	
+		}
+
+		prerequisite = { focus = army_idea_4 }
+		mutually_exclusive = {focus = army_idea_5 focus = army_idea_6}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.17
+			if = {
+				limit = { has_idea = army_ideas_5}
+				swap_ideas = {
+					remove_idea = army_ideas_5
+					add_idea = army_ideas_8
+				}
+			}
+
+		}
+	}
+
+  #Navy
+	focus = {
+		id = navy_start
+		icon = GFX_focus_political_start
+		x = 0
+		y = 1
+		cost = 1
+
+		prerequisite = { focus = militar_start}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			navy_experience = 20
+			country_event = generic_event.13
+
+		}
+	}
+	focus = {
+		id = navy_idea_1
+		icon = GFX_focus_political_start
+		x = -1
+		y = 2
+		cost = 1
+
+		prerequisite = { focus = navy_start}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+ 
+			
+		}
+	}
+	focus = {
+		id = navy_idea_2
+		icon = GFX_focus_political_start
+		x = 1
+		y = 2
+		cost = 1
+
+		prerequisite = { focus = navy_start}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = navy_idea_3
+		icon = GFX_focus_political_start
+		x = 0
+		y = 3
+		cost = 1
+
+		prerequisite = { focus = navy_idea_2 focus = navy_idea_1}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = navy_idea_4
+		icon = GFX_focus_political_start
+		x = 0
+		y = 4
+		cost = 1
+
+		prerequisite = { focus = navy_idea_3 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = navy_idea_5
+		icon = GFX_focus_political_start
+		x = -1
+		y = 5
+		cost = 1
+
+		prerequisite = { focus = navy_idea_4 }
+		mutually_exclusive = {focus = navy_idea_6 }
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = navy_idea_6
+		icon = GFX_focus_political_start
+		x = 1
+		y = 5
+		cost = 1
+
+		prerequisite = { focus = navy_idea_4 }
+		mutually_exclusive = {focus = navy_idea_5 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+  #Air Force
+	focus = {
+		id = air_start
+		icon = GFX_focus_political_start
+		x = 5
+		y = 1
+		cost = 1
+
+		prerequisite = { focus = militar_start}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			air_experience = 20
+			country_event = generic_event.14
+
+		}
+	}
+	focus = {
+		id = air_idea_1
+		icon = GFX_focus_political_start
+		x = 4
+		y = 2
+		cost = 1
+
+		prerequisite = { focus = air_start}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = air_idea_2
+		icon = GFX_focus_political_start
+		x = 6
+		y = 2
+		cost = 1
+
+		prerequisite = { focus = air_start}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = air_idea_3
+		icon = GFX_focus_political_start
+		x = 5
+		y = 3
+		cost = 1
+
+		prerequisite = { focus = air_idea_2 focus = air_idea_1}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = air_idea_4
+		icon = GFX_focus_political_start
+		x = 5
+		y = 4
+		cost = 1
+
+		prerequisite = { focus = air_idea_3 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = air_idea_5
+		icon = GFX_focus_political_start
+		x = 4
+		y = 5
+		cost = 1
+
+		prerequisite = { focus = air_idea_4 }
+		mutually_exclusive = {focus = air_idea_6 }
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = air_idea_6
+		icon = GFX_focus_political_start
+		x = 6
+		y = 5
+		cost = 1
+
+		prerequisite = { focus = air_idea_4 }
+		mutually_exclusive = {focus = air_idea_5 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+ #Industrial stuff
+	#Start of the modernization of the economy
+	focus = {
+		id = industrial_idea
+		icon = SOV_fund_industrial_rejuvination
+		x = 12
+		y = 0
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.19
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	#Start of the industrial modernization 
+	focus = {
+		id = industrial_idea_1
+		icon = SOV_finance_industrial_sector
+		x = 11
+		y = 1
+		cost = 10
+
+		prerequisite = {focus = industrial_idea}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.20
+			add_ideas = industrial_ideas_1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				} 
+			}
+		}
+	}
+	#Start of the office expansion 
+	focus = {
+		id = industrial_idea_2
+		icon = SOV_upgrade_industrial_production
+		x = 13
+		y = 1
+		cost = 10
+
+		prerequisite = {focus = industrial_idea}
+		available = {
+			has_idea = industrial_ideas_4
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.24
+			if = {
+				limit = { has_idea = industrial_ideas_4}
+				swap_ideas = {
+					remove_idea = industrial_ideas_4
+					add_idea = industrial_ideas_5
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = office_park
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = office_park
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = office_park
+					level = 2
+					instant_build = yes
+				} 
+			}
+			
+		}
+	}
+	#Start of the economical of offices expansion 
+	focus = {
+		id = industrial_idea_3
+		icon = GFX_corporate_concessions
+		x = 13
+		y = 2
+		cost = 10
+
+		prerequisite = {focus = industrial_idea_2}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.25
+			if = {
+				limit = { has_idea = industrial_ideas_5}
+				swap_ideas = {
+					remove_idea = industrial_ideas_5
+					add_idea = industrial_ideas_6
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = office_park
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = office_park
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = office_park
+					level = 3
+					instant_build = yes
+				} 
+			}
+		}
+	}
+	#Start of the economical of industrial expansion 
+	focus = {
+		id = industrial_idea_4
+		icon = PRC_encourage_industrial_modernization
+		x = 11
+		y = 2
+		cost = 10
+
+		prerequisite = {focus = industrial_idea_1}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.21
+			if = {
+				limit = { has_idea = industrial_ideas_1}
+				swap_ideas = {
+					remove_idea = industrial_ideas_1
+					add_idea = industrial_ideas_2
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				} 
+			}
+		}
+	}
+	#Start of the resources  expansion 
+	focus = {
+		id = industrial_idea_5
+		icon = FRA_supplement_quebecois_industry
+		x = 9
+		y = 2
+		cost = 10
+
+		prerequisite = {focus = industrial_idea_4}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.22
+			if = {
+				limit = { has_idea = industrial_ideas_2}
+				swap_ideas = {
+					remove_idea = industrial_ideas_2
+					add_idea = industrial_ideas_3
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = tungsten
+					amount = 5
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = aluminium
+					amount = 5
+				}
+			}
+			
+		}
+	}
+	#Start of the resources  expansion 2
+	focus = {
+		id = industrial_idea_6
+		icon = GER_Increase_Oil_Reserves
+		x = 9
+		y = 3
+		cost = 10
+
+		prerequisite = {focus = industrial_idea_5}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.23
+			if = {
+				limit = { has_idea = industrial_ideas_3}
+				swap_ideas = {
+					remove_idea = industrial_ideas_3
+					add_idea = industrial_ideas_4
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 5
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = tungsten
+					amount = 5
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 40
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = aluminium
+					amount = 10
+				}
+			}
+		}
+	}
+	#Start of the military  expansion 
+	focus = {
+		id = industrial_idea_7
+		icon = SOV_introduce_industrial_automization
+		x = 12
+		y = 3
+		cost = 10
+
+		prerequisite = {focus = industrial_idea_3 }
+		prerequisite = {focus = industrial_idea_4 }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.26
+			if = {
+				limit = { has_idea = industrial_ideas_6}
+				swap_ideas = {
+					remove_idea = industrial_ideas_6
+					add_idea = industrial_ideas_7
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				} 
+			}
+		}
+	}
+	#Start of the military  expansion 
+	focus = {
+		id = industrial_idea_8
+		icon = USC_harness_the_military_industrial_complex
+		x = 12
+		y = 4
+		cost = 10
+
+		prerequisite = {focus = industrial_idea_7 }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			country_event = generic_event.27
+			if = {
+				limit = { has_idea = industrial_ideas_7}
+				swap_ideas = {
+					remove_idea = industrial_ideas_7
+					add_idea = industrial_ideas_8
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				} 
+			}
+		}
+	}
+
+
+   # Start of the energy expansion (idea) for energy 
+	focus = {
+		id = energy_idea_1
+		icon = PRC_upgrade_energy_grid
+		x = 12
+		y = 5
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_ideas = energy_policy_idea
+		}
+	}
+
+	# giving infrastructure, and effects for building the infrastructure speed
+	focus = {
+		id = energy_idea_2
+		icon = USB_nationalize_critical_infrastructure
+		x = 11
+		y = 6
+		cost = 10
+		
+		prerequisite = { focus = energy_idea_1 }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} 
+			}
+			if = {
+				limit = { has_idea = energy_policy_idea_2}
+				swap_ideas = {
+					remove_idea = energy_policy_idea_2
+					add_idea = energy_policy_idea_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = energy_policy_idea}
+				swap_ideas = {
+					remove_idea = energy_policy_idea
+					add_idea = energy_policy_idea_1
+				}
+			}
+
+		}
+	}
+
+	# giving synthetic oil building also some effects
+	focus = {
+		id = energy_idea_3
+		icon = FRA_Integrate_Military_Oil_Budget
+		x = 13
+		y = 6
+		cost = 10
+
+		available = {
+			has_tech = fuel_refining
+		}
+
+		prerequisite = { focus = energy_idea_1 }		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = synthetic_refinery
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = synthetic_refinery
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = synthetic_refinery
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				} 
+			}
+			if = {
+				limit = { has_idea = energy_policy_idea_2}
+				swap_ideas = {
+					remove_idea = energy_policy_idea_2
+					add_idea = energy_policy_idea_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = energy_policy_idea}
+				swap_ideas = {
+					remove_idea = energy_policy_idea
+					add_idea = energy_policy_idea_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = energy_policy_idea_1}
+				swap_ideas = {
+					remove_idea = energy_policy_idea_1
+					add_idea = energy_policy_idea_3
+				}
+			}
+			
+		}
+	}
+
+	# staying to old good coal depended industry
+	focus = {
+		id = energy_idea_4
+		icon = GER_revive_the_german_coal_industry
+		x = 12
+		y = 7
+		cost = 10
+		
+		available = {
+			has_tech = power_plants
+		}
+
+		prerequisite = { focus = energy_idea_3 }
+		prerequisite = { focus = energy_idea_2 }
+		mutually_exclusive = { focus = energy_idea_5 focus = energy_idea_6 }					
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = energy_policy_idea_3}
+				swap_ideas = {
+					remove_idea = energy_policy_idea_3
+					add_idea = energy_policy_idea_4
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = power_plant
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = power_plant
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = power_plant
+					level = 1
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = power_plant
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = power_plant
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = power_plant
+					level = 1
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = power_plant
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = power_plant
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = power_plant
+					level = 1
+					instant_build = yes
+				} 
+			}
+		}
+	}
+
+	# staying to nuclear oriented energy consumption
+	focus = {
+		id = energy_idea_5
+		icon = JAP_energy_independence_3
+		x = 10
+		y = 7
+		cost = 10
+
+		available = {
+			has_tech = nuclear_reactors
+		}
+		prerequisite = { focus = energy_idea_3 }
+		prerequisite = { focus = energy_idea_2 }
+		mutually_exclusive = { focus = energy_idea_6 focus = energy_idea_4 }				
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = energy_policy_idea_3}
+				swap_ideas = {
+					remove_idea = energy_policy_idea_3
+					add_idea = energy_policy_idea_5
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = nuclear_reactor
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = nuclear_reactor
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = nuclear_reactor
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = nuclear_reactor
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = nuclear_reactor
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = nuclear_reactor
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				} 
+			}
+		}
+	}
+
+	# staying to green oriented energy consumption
+	focus = {
+		id = energy_idea_6
+		icon = PRC_green_energy_green_vehicles_plan
+		x = 14
+		y = 7
+		cost = 10
+
+		available = {
+			has_tech = energy_farms
+		}
+
+		prerequisite = { focus = energy_idea_3 }
+		prerequisite = { focus = energy_idea_2 }
+		mutually_exclusive = { focus = energy_idea_5 focus = energy_idea_4 }				
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = energy_policy_idea_3}
+				swap_ideas = {
+					remove_idea = energy_policy_idea_3
+					add_idea = energy_policy_idea_6
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = energy_farm
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = energy_farm
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = energy_farm
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = energy_farm
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				} 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = energy_farm
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = energy_farm
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				} 
+			}
+		}
+	}
+
+ #Political Stuff
+	focus = {
+		id = political_start
+		icon = GFX_focus_political_start
+		x =  40
+		cost = 1
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_political_power = 110
+			add_timed_idea = {
+				idea = Government_Tourbulenc
+				days = 190
+
+			}
+		}
+		
+
+	}
+
+  #Socialism
+	focus = {
+		id = political_afl_socialism
+		icon = GER_socialist_democracy
+		x = 21
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = political_start}
+
+		mutually_exclusive = { focus =  political_afl_autocracy focus = political_afl_ultra_right focus = political_afl_democratic }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_timed_idea = { 
+				idea = Socialists_Rally
+				days = 50
+			}
+		}
+	}
+   #totalitarian_socialist
+	focus = {
+		id = political_total_socialism
+		icon = USC_eye_of_providence
+		x = 17
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = political_afl_socialism }
+
+		mutually_exclusive = { focus =  political_authoritarian_socialism focus = political_libertarian_socialism }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = The_State_Is_All
+			add_popularity = {
+    			ideology = totalitarian_socialist
+    			popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = political_total_socialism_first
+		icon = SOV_workplace_democracy
+		x = 17
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = political_total_socialism }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Ideological_Purification
+			add_popularity = {
+    			ideology = totalitarian_socialist
+    			popularity = 0.15
+			}
+		}
+	}
+	
+	focus = {
+		id = political_total_socialism_second
+		icon = GER_socialist_market_economics
+		x = 17
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = political_total_socialism_first}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Total_Command_Economy
+			add_popularity = {
+    			ideology = totalitarian_socialist
+    			popularity = 0.01
+			}
+		}
+	}
+	
+	focus = {
+		id = political_total_socialism_third
+		icon = APA_war_communism
+		x = 17
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = political_total_socialism_second }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = The_Surveillance_Apparatus
+			add_popularity = {
+    			ideology = totalitarian_socialist
+    			popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = political_total_socialism_forth
+		icon = APA_socialist_realism
+		x = 17
+		y = 6
+		cost = 10
+
+		available = {
+			totalitarian_socialist > 0.5
+		}
+		prerequisite = { focus = political_total_socialism_third }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = The_Total_State
+			set_politics = {
+				ruling_party = totalitarian_socialist
+				elections_allowed = no
+			}
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_planned_economy
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_planned_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_planned_economy
+				}
+			}
+
+			country_event = generic_event.10
+		}
+	}
+   
+   #Authoritarian Socialists
+	focus = {
+		id = political_authoritarian_socialism
+		icon = GER_community_of_socialist_workers
+		x = 21
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = political_afl_socialism }
+
+		mutually_exclusive = { focus =  political_total_socialism focus = political_libertarian_socialism }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Power_to_the_Proletariat
+			add_popularity = {
+    			ideology = communist
+    			popularity = 0.1
+			}
+		}
+	}
+		focus = {
+		id = political_authoritarian_socialism_first
+		icon = APA_meritocratic_socialism
+		x = 21
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = political_authoritarian_socialism }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Revolutionary_Vanguard
+			add_popularity = {
+    			ideology = communist
+    			popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = political_authoritarian_socialism_second
+		icon = FPR_workplace_democracy
+		x = 21
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = political_authoritarian_socialism_first}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Total_Control_of_Production
+			add_popularity = {
+    			ideology = communist
+    			popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = political_authoritarian_socialism_third
+		icon = SOV_secured_socialist_state
+		x = 21
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = political_authoritarian_socialism_second }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Iron_Curtain_of_Surveillance
+			add_popularity = {
+    			ideology = communist
+    			popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = political_authoritarian_socialism_forth
+		icon = NSM_implement_guild_socialism
+		x = 21
+		y = 6
+		cost = 10
+
+		available = {
+			communist > 0.5
+		}
+
+		prerequisite = { focus = political_authoritarian_socialism_third}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Red_Totalitarianism
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = no
+			}
+		   #Changing to social economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_socialist_market
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_socialist_market
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_socialist_market
+				}
+			}
+
+			country_event = generic_event.9
+		}
+	}
+
+   #Liberal socialists
+	focus = {
+		id = political_libertarian_socialism
+		icon = SOV_encourage_local_democracy
+		x = 25
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = political_afl_socialism }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Freedom_Through_Solidarity
+			add_political_power = 100
+			add_popularity = {
+    			ideology = libertarian_socialist
+    			popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = political_libertarian_socialism_first
+		icon = SOV_peoples_democracy
+		x = 25
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = political_libertarian_socialism }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Grassroots_Revolution
+			add_popularity = {
+    			ideology = libertarian_socialist
+    			popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = political_libertarian_socialism_second
+		icon = APA_workplace_democracy
+		x = 25
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = political_libertarian_socialism_first }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Syndicalist_Networks
+			add_popularity = {
+    			ideology = social_liberal
+    			popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = political_libertarian_socialism_third
+		icon = APA_revolutionary_justice
+		x = 25
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = political_libertarian_socialism_second }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Abolish_the_State
+			add_popularity = {
+    			ideology = libertarian_socialist
+    			popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = political_libertarian_socialism_forth
+		icon = APA_bill_of_rights_socialism
+		x = 25
+		y = 6
+		cost = 10
+
+		available = {
+			libertarian_socialist > 0.5
+		}
+
+		prerequisite = { focus = political_libertarian_socialism_third }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Libertarian_Socialist_Federation
+			set_politics = {
+				ruling_party = libertarian_socialist
+				elections_allowed = yes
+			}
+
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_worker_controlled_economy
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+ 
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_worker_controlled_economy
+				}
+			}
+
+
+			country_event = generic_event.8
+		}
+	}
+
+  #Democracy
+	focus = {
+		id = political_afl_democratic
+		icon = GFX_500_days_program
+		x = 36
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = political_start}
+
+		mutually_exclusive = { focus = political_afl_socialism focus = political_afl_ultra_right focus = political_afl_autocracy }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_timed_idea = { 
+				idea = Democrats_Rally
+				days = 50
+			}
+
+		}
+	}
+
+   #Democratic socialism
+	focus = {
+		id = political_democratic_socialism
+		icon = generic_bank
+		x = 30
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = political_afl_democratic }
+
+		mutually_exclusive = { focus =  political_social_liberal focus = political_market_liberal focus = political_conservative }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Peoples_Revolution
+			add_popularity = {
+    			ideology = social_democrat
+    			popularity = 0.1
+			}
+
+		}
+	}
+
+	focus = {
+		id = political_democratic_socialism_first
+		icon = USB_criminal_justice_reform
+		x = 30
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = political_democratic_socialism }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Democratic_Socialist_Mandate
+			add_popularity = {
+    			ideology = social_liberal
+    			popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = political_democratic_socialism_second
+		icon = USC_encourage_the_working_men
+		x = 30
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = political_democratic_socialism_first}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Ballot_Box_Socialism
+			add_popularity = {
+    			ideology = social_liberal
+    			popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = political_democratic_socialism_third
+		icon = SOV_healthy_consumerism
+		x = 30
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = political_democratic_socialism_second }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = People_Welfare_Guarantee
+			add_popularity = {
+    			ideology = social_liberal
+    			popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = political_democratic_socialism_forth
+		icon = USB_national_synchronization_project
+		x = 30
+		y = 6
+		cost = 10
+
+		available = {
+			social_democrat > 0.50
+		}
+
+
+		prerequisite = { focus = political_democratic_socialism_third }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Democratic_Socialist_Commonwealth
+			set_politics = {
+				ruling_party = social_democrat
+				elections_allowed = yes
+			}
+
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_welfare_capitalism
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_welfare_capitalism
+				}
+			}
+
+			country_event = generic_event.6
+		}
+	}
+
+   #Social Liberals
+	focus = {
+		id = political_social_liberal
+		icon = GFX_shareholder_democracy_2
+		x = 34
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = political_afl_democratic}
+
+		mutually_exclusive = { focus =  political_democratic_socialism focus = political_market_liberal focus = political_conservative }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Social_Liberal_Reform_Movement
+			add_popularity = {
+    			ideology = social_liberal
+    			popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = political_social_liberal_first
+		icon = GFX_corporate_concessions
+		x = 34
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = political_social_liberal }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Balanced_Capitalism
+			add_popularity = {
+    			ideology = social_liberal
+    			popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = political_social_liberal_second
+		icon = GFX_force_corporate_compliance
+		x = 34
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = political_social_liberal_first}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Regulated_Market_Initiative
+			add_stability = 0.05
+			add_popularity = {
+    			ideology = social_liberal
+    			popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = political_social_liberal_third
+		icon = GFX_other_alternatives
+		x = 34
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = political_social_liberal_second }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Global_Engagement_Pact
+			add_stability = 0.05
+			add_popularity = {
+    			ideology = social_liberal
+    			popularity = 0.1
+			}
+		}		
+	}
+	
+	focus = {
+		id = political_social_liberal_forth
+		icon = GFX_generic_bust_the_trusts
+		x = 34
+		y = 6
+		cost = 10
+
+		available = {
+			social_liberal > 0.5
+		}
+
+		prerequisite = { focus = political_social_liberal_third }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Modern_Liberal_Consensus
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = yes
+			}
+
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_liberal_corporatism
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_liberal_corporatism
+				}
+			}
+
+			country_event = generic_event.1
+		}			
+	}
+
+   #Market Liberal	
+	focus = {
+		id = political_market_liberal
+		icon = GFX_tighten_our_grip_on_the_plutocrats
+		x = 38
+		y = 2
+		cost = 10
+
+		available {
+			market_liberal > 50
+		}
+		prerequisite = { focus = political_afl_democratic}
+
+		mutually_exclusive = { focus =  political_social_liberal focus = political_democratic_socialism focus = political_conservative }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Anarcho_Capitalist_Awakening
+			add_political_power = 100
+			add_popularity = {
+    			ideology = market_liberal
+    			popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = political_market_liberal_first
+		icon = GFX_encourage_entrepenureship
+		x = 38
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = political_market_liberal }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Total_Deregulation
+			market_liberal_drift = 0.01
+			add_political_power = 50
+			add_popularity = {
+    			ideology = market_liberal
+    			popularity = 0.10
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				} 
+			}
+		}
+	}
+	
+	focus = {
+		id = political_market_liberal_second
+		icon = GFX_prohibit_subversive_media
+		x = 38
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = political_market_liberal_first }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Privatization_Blitz
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = political_market_liberal_third
+		icon = GFX_generic_ease_taxpayer_burdens
+		x = 38
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = political_market_liberal_second }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Market_Supremacy
+			market_liberal_drift = 0.01
+			add_popularity = {
+    			ideology = market_liberal
+    			popularity = 0.10
+			}
+			add_political_power = 75
+			if  = { 
+				limit = { has_idea = lower_trade }
+				swap_ideas = {
+						remove_idea = lower_trade
+						add_idea = high_trade
+					}
+			}
+			else_if = {
+				limit = { has_idea = low_trade}
+				swap_ideas = {
+					remove_idea = low_trade
+					add_idea = high_trade
+				}
+			}			
+
+			else_if = {
+				limit = { has_idea = medium_trade}
+				swap_ideas = {
+					remove_idea = medium_trade
+					add_idea = high_trade
+				}
+			}
+			#yeah this one prob never gonna happen, tho you never know!
+			else_if = {
+				limit = { has_idea = higher_trade}
+				swap_ideas = {
+					remove_idea = higher_trade
+					add_idea = high_trade
+				}
+			}
+			if  = { 
+				limit = { has_idea = high_welfare }
+				swap_ideas = {
+						remove_idea = high_welfare
+						add_idea = lower_welfare 
+					}
+			}
+			else_if = {
+				limit = { has_idea = low_welfare}
+				swap_ideas = {
+					remove_idea = low_welfare
+					add_idea = lower_welfare
+				}
+			}			
+
+			else_if = {
+				limit = { has_idea = medium_welfare}
+				swap_ideas = {
+					remove_idea = medium_welfare
+					add_idea = lower_welfare
+				}
+			}
+			#yeah this one prob never gonna happen, tho you never know!
+			else_if = {
+				limit = { has_idea = higher_welfare}
+				swap_ideas = {
+					remove_idea = higher_welfare
+					add_idea = lower_welfare
+				}
+			}
+			if  = { 
+				limit = { has_idea = low_safety }
+				swap_ideas = {
+						remove_idea = low_safety
+						add_idea = lower_safety 
+					}
+			}			
+
+			else_if = {
+				limit = { has_idea = medium_safety}
+				swap_ideas = {
+					remove_idea = medium_safety
+					add_idea = lower_safety
+				}
+			}
+			else_if = {
+				limit = { has_idea = high_safety}
+				swap_ideas = {
+					remove_idea = high_safety
+					add_idea = lower_safety
+				}
+			}
+			else_if = {
+				limit = { has_idea = higher_safety}
+				swap_ideas = {
+					remove_idea = higher_safety
+					add_idea = lower_safety
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = political_market_liberal_forth
+		icon = GFX_generic_foriegn_investment
+		x = 38
+		y = 6
+		cost = 10
+
+		available = {
+			market_liberal > 0.5
+		}
+
+		prerequisite = { focus = political_market_liberal_third }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Stateless_Capitalism
+			market_liberal_drift = 0.02
+			add_stability = 0.05
+			add_political_power = 100
+			set_politics = {
+				ruling_party = market_liberal
+				elections_allowed = yes
+			}
+
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_ancap
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_ancap
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_ancap
+				}
+			}
+
+			country_event = generic_event.8
+		}
+	}
+
+   #Conservative
+	focus = {
+		id = political_conservative
+		icon = GFX_Strong_Families
+		x = 42
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = political_afl_democratic}
+
+
+		mutually_exclusive = { focus =  political_social_liberal focus = political_market_liberal focus = political_democratic_socialism }
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Conservative_Campaign_Launch
+			add_political_power = 50
+			add_popularity = {
+    			ideology = conservative
+    			popularity = 0.05
+			}
+		}
+
+	}
+	focus = {
+		id = political_conservative_first
+		icon = GFX_generic_promote_managerial_thought
+		x = 42
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = political_conservative }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Family_and_Tradition
+			add_political_power = 75
+			conservative_drift = 0.02
+			add_popularity = {
+    			ideology = conservative
+    			popularity = 0.1
+			}
+		}
+
+	}
+	
+	focus = {
+		id = political_conservative_second
+		icon = GFX_generic_increase_corporate_taxes
+		x = 42
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = political_conservative_first}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Pillars_of_Society
+			add_stability = 0.05
+			conservative_drift = 0.03
+			add_popularity = {
+    			ideology = conservative
+    			popularity = 0.05
+			}
+		}
+
+	}
+	
+	focus = {
+		id = political_conservative_third
+		icon = GFX_shareholder_democracy
+		x = 42
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = political_conservative_second }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Market_and_Morality
+			add_political_power = 100
+			add_stability = 0.05
+			add_popularity = {
+    			ideology = conservative
+    			popularity = 0.10
+			}
+		}
+
+	}
+	
+	focus = {
+		id = political_conservative_forth
+		icon = GFX_codify_social_stratification
+		x = 42
+		y = 6
+		cost = 10
+
+		available = {
+			conservative > 0.5
+		}
+		prerequisite = { focus = political_conservative_third }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_ideas = Order_and_Tradition
+			add_stability = 0.1
+			add_political_power = 150
+			set_politics = {
+				ruling_party = conservative
+				elections_allowed = yes
+			}
+
+		   #Changing to economic system
+			if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_capitalist_economy
+				}
+			}
+
+			country_event = generic_event.1
+		}
+
+	}
+
+  #Autocrats
+	focus = {
+		id = political_afl_autocracy
+		icon = GFX_Entrech_French_Supriority
+		x = 50
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = political_start}
+
+		mutually_exclusive = { focus =  political_afl_democratic focus = political_afl_socialism focus = political_afl_ultra_right }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_political_power = 80
+			add_popularity = {
+    			ideology = nationalist
+    			popularity = 0.05
+			}
+			add_popularity = {
+    			ideology = authoritarian_democrat
+    			popularity = 0.05
+			}
+
+
+			add_timed_idea = { 
+				idea = Autocrats_Rally
+				days = 50
+			}
+		}
+	}
+
+   # Authoritarian Democrat
+	focus = {
+		id = political_authoritarian_democracy
+		icon = GFX_baskinthelight
+		x = 48
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = political_afl_autocracy }
+
+		mutually_exclusive = { focus = political_despotic }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_ideas = Authoritarian_Democracy_Thought
+			add_stability = 0.05
+			add_political_power = 50
+
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = political_authoritarian_democracy_first
+		icon = GFX_Utilize_Fascist_Militias
+		x = 48
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = political_authoritarian_democracy }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_ideas = Authoritarian_Civic_Activism
+			add_manpower = 25000
+			add_political_power = 25
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = political_authoritarian_democracy_second
+		icon = GFX_Suburban_Renewal
+		x = 48
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = political_authoritarian_democracy_first }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_ideas = Reconstruction_Authority
+			add_stability = 0.05
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.05
+			}	
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = political_authoritarian_democracy_third
+		icon = GFX_Welcome_International_Volunteers
+		x = 48
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = political_authoritarian_democracy_second }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_ideas = Volunteer_Engagement_Plan
+			add_ideas = generic_volunteer_corps_idea
+			add_war_support = 0.05
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.01
+			}
+		}
+	}
+
+	focus = {
+		id = political_authoritarian_democracy_forth
+		icon = GFX_Rebalance
+		x = 48
+		y = 6
+		cost = 10
+
+		prerequisite = { focus = political_authoritarian_democracy_third }
+
+		available = {
+			authoritarian_democrat > 0.5
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_ideas = Administrative_Balance_Council
+			add_political_power = 100
+			add_war_support = 0.05
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.15
+			}
+
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_state_capitalism
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_state_capitalism
+				}
+			}
+
+			country_event = generic_event.5
+		}
+	}
+
+   #Despotics
+    #Despotic Start
+	focus = {
+		id = political_despotic
+		icon = GFX_Stabilite_et_Autorite
+		x = 52
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = political_afl_autocracy }
+
+		mutually_exclusive = { focus = political_authoritarian_democracy }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.1
+			}
+			add_timed_idea = {
+				idea = Despotic_Shadow_Cabinet
+				days = 50
+			}
+		}
+	}
+
+	# First Step: Authoritarian Legitimacy
+	focus = {
+		id = political_despotic_first
+		icon = GFX_generic_army_effort
+		x = 52
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = political_despotic }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.1
+			}
+			add_ideas = Despotic_Intelligence_Expansion
+		}
+	}
+
+	# Second Step: Surveillance Doctrine
+	focus = {
+		id = political_despotic_second
+		icon = GFX_generic_media_control
+		x = 52
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = political_despotic_first }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.05
+			}
+			add_ideas = Despotic_Internal_Control
+		}
+	}
+
+	# Third Step: Suppression Protocol
+	focus = {
+		id = political_despotic_third
+		icon = GFX_generic_bury_weapons
+		x = 52
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = political_despotic_second }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.05
+			}
+			add_ideas = Despotic_Martial_Directive
+		}
+	}
+
+	# Final Step: Absolute Control
+	focus = {
+		id = political_despotic_forth
+		icon = GFX_generic_western_democracy
+		x = 52
+		y = 6
+		cost = 10
+
+		available = {
+			nationalist > 0.5
+
+		}
+
+		prerequisite = { focus = political_despotic_third }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = nationalist
+				elections_allowed = no
+			}
+			add_ideas = Despotic_Elite_Council
+
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_military_controlled_economy
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_military_controlled_economy
+				}
+			}
+
+			country_event = generic_event.4
+		}
+	}
+
+  #Ultra_Right
+	focus = {
+		id = political_afl_ultra_right
+		icon = GFX_unify_nationalist_militaries
+		x = 60
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = political_start}
+
+		mutually_exclusive = { focus = political_afl_autocracy focus = political_afl_socialism focus = political_afl_democratic  }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_political_power = 15
+
+			add_popularity = {
+    			ideology = fascist
+    			popularity = 0.05
+			}
+			add_popularity = {
+    			ideology = national_socialist
+    			popularity = 0.05
+			}
+			add_timed_idea = {
+				idea = Ultra_Right_Rally
+				days = 50
+
+			}
+		}		
+	}
+
+   #fascist
+	focus = {
+		id = political_fascism
+		icon = GFX_adopt_a_neoclassical_aesthetic
+		x = 58
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = political_afl_ultra_right }
+
+		mutually_exclusive = { focus = political_national_socialism }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.1
+			}
+			add_timed_idea = {
+				idea = Fascist_Mobilization
+				days = 180
+			}
+		}
+	}
+
+	focus = {
+		id = political_fascism_first
+		icon = GFX_prepare_the_nation
+		x = 58
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = political_fascism }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.15
+			}
+			add_ideas = Paramilitary_Expansion
+		}
+	}
+
+	focus = {
+		id = political_fascism_second
+		icon = GFX_refine_airland_combat
+		x = 58
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = political_fascism_first }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.05
+			}
+			add_ideas = Cultural_Uniformity_Fascism
+			if  = { 
+				limit = { has_idea = mass_consumerism }
+				swap_ideas = {
+						remove_idea = mass_consumerism
+						add_idea = early_mobilization
+					}
+			}
+			else_if = {
+				limit = { has_idea = civilian_mobilization}
+				swap_ideas = {
+					remove_idea = civilian_mobilization
+					add_idea = partial_mobilization
+				}
+			}			
+
+			else_if = {
+				limit { has_idea = early_mobilization}
+				swap_ideas = {
+					remove_idea = early_mobilization
+					add_idea = partial_mobilization
+				}
+			}
+			#yeah this one prob never gonna happen, tho you never know!
+			else_if = {
+				limit { has_idea = partial_mobilization}
+				swap_ideas = {
+					remove_idea = partial_mobilization
+					add_idea = war_mobilization
+				}
+			}			
+
+
+		}
+	}
+
+	focus = {
+		id = political_fascism_third
+		icon = GFX_strength_and_glory
+		x = 58
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = political_fascism_second }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.05
+			}
+			add_ideas = Doctrine_of_Glory
+			add_ideas = 
+		}
+	}
+
+	focus = {
+		id = political_fascism_forth
+		icon = GFX_the_totalitarian_society
+		x = 58
+		y = 6
+		cost = 10
+
+		available = {
+			fascist > 0.5
+		}
+
+		prerequisite = { focus = political_fascism_third }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascist
+				elections_allowed = no
+			}
+			add_ideas = Total_State_Control
+			if = { 
+				limit = {has_idea = lowest_police}
+				swap_ideas = {
+					remove_idea = lowest_police
+					add_idea = highest_police
+				}
+			}
+			Else_if = {
+				limit = { has_idea = lower_police}
+				swap_ideas = {
+					remove_idea = lower_police
+					add_idea = highest_police
+				}
+			}			
+			else_if = {
+				limit = { has_idea = low_police}
+				swap_ideas = {
+					remove_idea = low_police
+					add_idea = highest_police
+				}
+			}
+			else_if = {
+				limit = { has_idea = medium_police}
+				swap_ideas = {
+					remove_idea = medium_police
+					add_idea = highest_police
+				}
+			}
+			else_if = {
+				limit = { has_idea = high_police}
+				swap_ideas = {
+					remove_idea = high_police
+					add_idea = highest_police
+				}
+			}
+			else_if = {
+				limit = { has_idea = higher_police}
+				swap_ideas = {
+					remove_idea = higher_police
+					add_idea = highest_police
+				}
+			}
+
+		   #Changing to fascist economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_command_economy
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_command_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_command_economy
+				}
+			}
+
+			country_event = generic_event.3
+		}
+	}
+
+   #Nazi
+	focus = {
+		id = political_national_socialism
+		icon = GFX_passion_of_the_aryan
+		x = 62
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = political_afl_ultra_right}
+
+
+		mutually_exclusive = { focus =  political_fascism }
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+
+			add_popularity = {
+    			ideology = national_socialist
+    			popularity = 0.1
+			}
+			add_timed_idea = {
+				idea = Ultra_Right_Rally
+				days = 50
+
+			}
+		}
+	}
+	focus = {
+		id = political_national_socialism_first
+		icon = GFX_open_their_eyes
+		x = 62
+		y = 3
+		cost = 10
+
+		available = {
+			national_socialist > 0.15
+		}
+
+		prerequisite = { focus = political_national_socialism }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_popularity = {
+    			ideology = national_socialist
+    			popularity = 0.15
+			}
+			add_ideas = Mobilized_masses
+			if  = { 
+				limit = { has_idea = mass_consumerism }
+				swap_ideas = {
+						remove_idea = mass_consumerism
+						add_idea = early_mobilization
+					}
+			}
+			if = {
+				limit = { has_idea = civilian_mobilization}
+				swap_ideas = {
+					remove_idea = civilian_mobilization
+					add_idea = partial_mobilization
+				}
+			}			
+
+			else_if = {
+				limit = { has_idea = early_mobilization}
+				swap_ideas = {
+					remove_idea = early_mobilization
+					add_idea = partial_mobilization
+				}
+			}
+			#yeah this one prob never gonna happen, tho you never know!
+			else_if = {
+				limit = { has_idea = partial_mobilization}
+				swap_ideas = {
+					remove_idea = partial_mobilization
+					add_idea = war_mobilization
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = political_national_socialism_second
+		icon = GFX_organize_the_kollective
+		x = 62
+		y = 4
+		cost = 10
+
+		available = {
+			national_socialist > 0.35
+		}
+
+		prerequisite = { focus = political_national_socialism_first}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+    			ideology = national_socialist
+    			popularity = 0.05
+			}
+			add_ideas = Racial_purity
+			
+			
+		}
+	}
+
+	focus = {
+		id = political_national_socialism_third
+		icon = GFX_reverse_their_progress
+		x = 62
+		y = 5
+		cost = 10
+
+		available = {
+			national_socialist > 0.42
+		}
+
+		prerequisite = { focus = political_national_socialism_second }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+    			ideology = national_socialist
+    			popularity = 0.05
+			}
+
+			add_ideas = Doctrine_of_Purity
+		}
+	}
+
+	focus = {
+		id = political_national_socialism_forth
+		icon = GFX_the_final_aeon
+		x = 62
+		y = 6
+		cost = 10
+
+		available = {
+			national_socialist > 0.5
+		}
+
+		prerequisite = { focus = political_national_socialism_third }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1				
+			}
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = national_socialist
+				elections_allowed = no
+			}
+
+		   #Changing to economic system
+		    if  = { 
+				limit = { has_idea = ZZZ_capitalist_economy }
+				swap_ideas = {
+						remove_idea = ZZZ_capitalist_economy
+						add_idea = ZZZ_managed_economy
+					}
+				}
+			else_if = {
+				limit = { has_idea = ZZZ_mixed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_mixed_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_state_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_state_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_party_state_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_party_state_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_american_capitalism }
+				swap_ideas = {
+					remove_idea = ZZZ_american_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_collective_capitalism2}
+				swap_ideas = {
+					remove_idea = ZZZ_collective_capitalism2
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_oligopolistic_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_oligopolistic_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_america_first_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_america_first_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_welfare_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_welfare_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_maga_capitalism}
+				swap_ideas = {
+					remove_idea = ZZZ_maga_capitalism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_corporatism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_left_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_left_corporatism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_liberal_corporatism}
+				swap_ideas = {
+					remove_idea = ZZZ_liberal_corporatism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_managed_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_managed_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_kaiser_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_kaiser_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_command_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_command_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_planned_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_planned_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_socialist_market}
+				swap_ideas = {
+					remove_idea = ZZZ_socialist_market
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_developed_socialism}
+				swap_ideas = {
+					remove_idea = ZZZ_developed_socialism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_military_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_military_controlled_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_worker_controlled_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_worker_controlled_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_minarchism}
+				swap_ideas = {
+					remove_idea = ZZZ_minarchism
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_ancap}
+				swap_ideas = {
+					remove_idea = ZZZ_ancap
+					add_idea = ZZZ_managed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = ZZZ_chaostic_economy}
+				swap_ideas = {
+					remove_idea = ZZZ_chaostic_economy
+					add_idea = ZZZ_managed_economy
+				}
+			}
+
+			country_event = generic_event.2
+		}
+	}
+
+}
+
+#Way the pol focuses would work 
+	#1 the name of the ideology you choose bost to it for 180 days at least 0.10
+	#2 giving an idea (for example wealth distribution for socialists etc)
+	#3 another bufs and also maybe purge of opposing groups fascists purge commies etc, timed debuf idea
+	#4 boosts for parties also maybe by calling some kind of values etc
+	#5 adding for long time with special bufs 
+	#6 finally converting to this faction 
+#After all that goes reforms to purge all other factions more severely in the future
+
+# Wanna expend on separate  focus tree, where you could become neutral, interventionist, and CRAZY ASS WORLD DOMINATOR
+
+
